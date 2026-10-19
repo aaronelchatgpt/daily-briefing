@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0b2545">
+<meta name="theme-color" content="#0a1f38">
 <title>全球早报 · 2026年10月19日 星期一</title>
 <meta name="description" content="全球早报：要闻、行情、科技与加密市场速览。2026年10月19日 星期一">
 <meta property="og:title" content="全球早报 · 2026年10月19日 星期一">
@@ -12,118 +12,172 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%B0%3C/text%3E%3C/svg%3E">
 <style>
 :root{
-  --navy:#0b2545; --navy-2:#123a63; --blue:#0b6bcb; --blue-soft:#eaf2fd;
-  --up:#d6332e; --down:#1a7f37; --flat:#8a8f98;
-  --bg:#f4f6f9; --card:#ffffff; --ink:#1b1d21; --ink-2:#4b5158; --muted:#8b9199;
-  --line:#e7eaef; --line-2:#f0f2f5;
-  --gold:#b8860b; --amber-bg:#fff8e6; --amber-line:#f2e2b8;
-  --radius:14px; --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.06);
-  --shadow-sm:0 1px 2px rgba(16,24,40,.05);
-  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --bg:#f3f5f8; --card:#ffffff; --ink:#0f1b2d; --ink-2:#3d4a5c; --muted:#8794a6;
+  --line:#e5e9f0; --line-2:#eef1f6;
+  --navy:#0a1f38; --navy-2:#123a63; --blue:#0b6bcb; --gold:#b08d3f;
+  --up:#cf3b34; --down:#1c8a5a; --flat:#9aa4b2;
+  --radius:18px;
+  --shadow:0 1px 2px rgba(15,27,45,.04), 0 10px 30px rgba(15,27,45,.06);
+  --shadow-lg:0 2px 6px rgba(15,27,45,.06), 0 22px 60px rgba(15,27,45,.10);
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+  --serif:Georgia,"Times New Roman","Songti SC",serif;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --navy:#0d1826; --navy-2:#132740; --blue:#5aa2ff; --blue-soft:#16233a;
-    --up:#ff6b63; --down:#3fbf72;
-    --bg:#0e1116; --card:#161a21; --ink:#e9ecf1; --ink-2:#b9c0ca; --muted:#7d858f;
-    --line:#262c36; --line-2:#1e242d;
-    --amber-bg:#2a2415; --amber-line:#4a4126;
-    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
-    --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+    --bg:#0b0f15; --card:#141a22; --ink:#eaeef5; --ink-2:#b8c1cd; --muted:#7f8a99;
+    --line:#212a35; --line-2:#1a222c;
+    --navy:#0a1f38; --navy-2:#0f2a45; --blue:#5aa2ff; --gold:#d0a94f;
+    --up:#ff6f66; --down:#3fbf87; --flat:#7d8794;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 34px rgba(0,0,0,.35);
+    --shadow-lg:0 2px 6px rgba(0,0,0,.45), 0 24px 64px rgba(0,0,0,.5);
   }
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased;padding-bottom:calc(32px + env(safe-area-inset-bottom))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased;padding-bottom:calc(40px + env(safe-area-inset-bottom))}
 .num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
-.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.wrap{max-width:780px;margin:0 auto;padding:0 18px}
 
-.masthead{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 58%,var(--blue) 145%);color:#fff;padding:calc(26px + env(safe-area-inset-top)) 0 24px;border-bottom:1px solid rgba(255,255,255,.08)}
-.masthead .wrap{display:flex;flex-direction:column;gap:10px}
-.brandmark{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.brandmark h1{margin:0;font-size:30px;line-height:1.2;font-weight:800;letter-spacing:2px}
-.brand-en{font-size:10.5px;letter-spacing:2.6px;color:rgba(255,255,255,.62);text-transform:uppercase;font-weight:600;padding-bottom:3px}
+/* 顶部阅读进度 */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--blue));z-index:60;transition:width .08s linear}
+
+/* 报头 */
+.masthead{position:relative;overflow:hidden;color:#fff;padding:calc(46px + env(safe-area-inset-top)) 0 38px;
+  background:
+    radial-gradient(1100px 420px at 88% -12%, rgba(11,107,203,.55), transparent 62%),
+    radial-gradient(700px 320px at 4% 130%, rgba(176,141,63,.22), transparent 64%),
+    linear-gradient(135deg,#081a30 0%,#0d2845 56%,#123a63 100%);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.masthead::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:46px 46px;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 78%);
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 78%);
+}
+.masthead::after{content:"10.19";position:absolute;right:-4px;bottom:-30px;font:700 118px/1 var(--serif);letter-spacing:-5px;color:rgba(255,255,255,.055);pointer-events:none}
+.masthead .wrap{position:relative;z-index:1;display:flex;flex-direction:column;gap:12px}
+.brandmark{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brandmark h1{margin:0;font-size:34px;line-height:1.15;font-weight:800;letter-spacing:3px}
+.brand-en{font-size:10px;letter-spacing:3.4px;color:rgba(255,255,255,.58);text-transform:uppercase;font-weight:700;padding-bottom:4px}
 .mastmeta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13.5px}
-.dateline{font-weight:700;letter-spacing:.5px}
-.masthead .dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.45)}
-.stamp{color:rgba(255,255,255,.66);font-size:12.5px}
-.tagline{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;margin-top:2px;padding:3px 10px;border-radius:999px;font-size:12px;background:rgba(255,255,255,.13);color:#fff;border:1px solid rgba(255,255,255,.16)}
+.dateline{font-weight:700;letter-spacing:.6px}
+.masthead .dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.4)}
+.stamp{color:rgba(255,255,255,.62);font-size:12.5px;letter-spacing:.4px}
+.tagline{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;margin-top:4px;padding:4px 12px;border-radius:999px;font-size:12px;letter-spacing:.6px;background:rgba(255,255,255,.10);color:#fff;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px)}
 
-.toc{position:sticky;top:0;z-index:20;background:rgba(244,246,249,.86);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
-@media (prefers-color-scheme: dark){.toc{background:rgba(14,17,22,.86)}}
-.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+/* 吸顶目录 */
+.toc{position:sticky;top:0;z-index:50;background:rgba(243,245,248,.82);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--line)}
+@media (prefers-color-scheme: dark){.toc{background:rgba(11,15,21,.82)}}
+.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding:11px 18px;scrollbar-width:none}
 .toc .wrap::-webkit-scrollbar{display:none}
-.toc a{flex:none;text-decoration:none;color:var(--ink-2);font-size:13px;font-weight:600;padding:6px 13px;border-radius:999px;background:var(--card);border:1px solid var(--line);white-space:nowrap;transition:.18s}
-.toc a:hover{color:var(--blue);border-color:var(--blue);box-shadow:var(--shadow-sm)}
+.toc a{flex:none;text-decoration:none;color:var(--ink-2);font-size:12.5px;font-weight:600;letter-spacing:.3px;padding:6px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);white-space:nowrap;transition:all .2s}
+.toc a:hover{color:var(--blue);border-color:var(--blue)}
+.toc a.on{color:#fff;background:var(--navy);border-color:var(--navy);box-shadow:var(--shadow)}
 
-section{scroll-margin-top:64px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-top:16px;box-shadow:var(--shadow-sm)}
-.sec-head{display:flex;align-items:center;gap:10px;margin:26px 0 12px}
-.sec-no{flex:none;width:26px;height:26px;border-radius:8px;background:var(--blue);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center;letter-spacing:.5px}
-.sec-head h2{margin:0;font-size:18px;font-weight:800;letter-spacing:.5px}
-.sec-count{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600}
+/* 速览 */
+.hero{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-top:20px;box-shadow:var(--shadow);overflow:hidden}
+.hero>div{padding:16px 18px;border-left:1px solid var(--line-2);min-width:0}
+.hero>div:first-child{border-left:0}
+.hero .k{display:block;font-size:10.5px;color:var(--muted);font-weight:700;letter-spacing:.8px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero .v{display:block;margin-top:5px;font:800 19px/1.3 var(--serif),var(--sans);letter-spacing:.2px}
+.hero .v em{display:block;font:600 12px/1.4 var(--sans);font-style:normal;margin-top:2px}
+.hero .v em.up{color:var(--up)} .hero .v em.down{color:var(--down)} .hero .v em.flat{color:var(--flat)}
 
-.flash{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:16px}
-.flash div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow-sm)}
-.flash .k{display:block;font-size:11.5px;color:var(--muted);font-weight:600;letter-spacing:.3px}
-.flash .v{display:block;font-size:16px;font-weight:800;margin-top:3px;letter-spacing:.2px}
+/* 区块头 */
+section{scroll-margin-top:70px}
+.sec-head{position:relative;display:flex;align-items:center;gap:11px;margin:38px 0 16px;padding-bottom:11px;border-bottom:1px solid var(--line)}
+.sec-head::after{content:"";position:absolute;left:0;bottom:-1px;width:58px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.ghost{position:absolute;right:-6px;top:-26px;font:800 68px/1 var(--serif);letter-spacing:-3px;color:rgba(15,27,45,.045);pointer-events:none;user-select:none}
+@media (prefers-color-scheme: dark){.ghost{color:rgba(255,255,255,.045)}}
+.sec-no{flex:none;width:27px;height:27px;border-radius:9px;background:var(--navy);color:#fff;font-size:11.5px;font-weight:800;display:grid;place-items:center;letter-spacing:.5px;box-shadow:0 4px 12px rgba(10,31,56,.22)}
+.sec-head h2{margin:0;font-size:18.5px;font-weight:800;letter-spacing:.8px}
+.sec-count{margin-left:auto;font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.5px}
 
+/* 卡片 */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;animation:rise .55s cubic-bezier(.2,.7,.3,1) both}
+.data-card{padding:18px 20px}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.card{animation:none}}
+
+/* 新闻 */
 .news{list-style:none;margin:0;padding:0;counter-reset:n}
-.news li{counter-increment:n;position:relative;padding:14px 0 14px 34px;border-bottom:1px solid var(--line-2)}
-.news li:last-child{border-bottom:0;padding-bottom:2px}
-.news li::before{content:counter(n);position:absolute;left:0;top:15px;width:22px;height:22px;border-radius:50%;background:var(--blue-soft);color:var(--blue);font-size:11.5px;font-weight:800;display:grid;place-items:center}
-.news h3{margin:0 0 3px;font-size:15.5px;font-weight:800;line-height:1.6;letter-spacing:.2px}
-.news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.72}
-.src{font-size:11.5px;color:var(--muted);margin-top:2px}
+.news li{counter-increment:n;position:relative;padding:17px 20px 17px 52px;border-bottom:1px solid var(--line-2);transition:background .2s}
+.news li:last-child{border-bottom:0}
+.news li:hover{background:rgba(11,107,203,.025)}
+.news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:16px;font:700 14px/1 var(--serif);color:var(--gold);letter-spacing:.6px}
+.news h3{margin:0 0 4px;font-size:15.8px;font-weight:800;line-height:1.62;letter-spacing:.2px}
+.news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.75}
+.src{font-size:11.5px;color:var(--muted);margin-top:4px;letter-spacing:.3px}
 
-.mkt-group{margin-top:14px}
-.mkt-group:first-child{margin-top:0}
-.mkt-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-size:13.5px;font-weight:800;color:var(--ink);padding-bottom:7px;border-bottom:1px solid var(--line-2);margin-bottom:4px}
-.mkt-title span{font-size:12px;font-weight:500;color:var(--muted)}
-.mkt-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line-2)}
+/* 行情 */
+.mkt-group+.mkt-group{margin-top:16px}
+.mkt-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-size:12px;font-weight:800;color:var(--muted);letter-spacing:1.4px;text-transform:uppercase;padding-bottom:7px;border-bottom:1px solid var(--line-2);margin-bottom:2px}
+.mkt-title span{font-size:11px;font-weight:600;letter-spacing:.3px;text-transform:none}
+.mkt-row{display:flex;align-items:center;gap:10px;padding:9.5px 2px;border-bottom:1px dashed var(--line-2)}
 .mkt-row:last-child{border-bottom:0}
 .mkt-name{flex:1;font-size:14px;font-weight:600;color:var(--ink)}
-.mkt-val{font-size:15.5px;font-weight:800;letter-spacing:.3px}
-.chg{flex:none;min-width:78px;text-align:right;font-size:13.5px;font-weight:800;padding:3px 9px;border-radius:8px;font-variant-numeric:tabular-nums}
-.chg.up{color:var(--up);background:rgba(214,51,46,.09)}
-.chg.down{color:var(--down);background:rgba(26,127,55,.10)}
-.chg.flat{color:var(--flat);background:rgba(138,143,152,.10)}
-@media (prefers-color-scheme: dark){.chg.up{background:rgba(255,107,99,.12)}.chg.down{background:rgba(63,191,114,.13)}}
-.chg-inline{font-size:12.5px;font-weight:800}
-.chg-inline.up{color:var(--up)}
-.chg-inline.down{color:var(--down)}
-.chg-inline.flat{color:var(--flat)}
+.mkt-val{font-size:15.5px;font-weight:800;letter-spacing:.3px;font-family:var(--serif),var(--sans)}
+.chg{flex:none;min-width:82px;text-align:right;font-size:13px;font-weight:800;padding:3px 10px;border-radius:8px;font-variant-numeric:tabular-nums;letter-spacing:.2px}
+.chg.up{color:var(--up);background:rgba(207,59,52,.08)}
+.chg.down{color:var(--down);background:rgba(28,138,90,.09)}
+.chg.flat{color:var(--flat);background:rgba(154,164,178,.10)}
+@media (prefers-color-scheme: dark){.chg.up{background:rgba(255,111,102,.12)}.chg.down{background:rgba(63,191,135,.12)}}
+.chg-inline{font-size:12.5px;font-weight:800;letter-spacing:.2px}
+.chg-inline.up{color:var(--up)} .chg-inline.down{color:var(--down)} .chg-inline.flat{color:var(--flat)}
 
-.note{margin-top:12px;padding:11px 13px;border-radius:10px;font-size:13.5px;line-height:1.7;background:var(--amber-bg);border:1px solid var(--amber-line);color:var(--ink-2)}
-.note b{color:var(--ink);margin-right:4px}
-.src-line{margin-top:10px;font-size:11.5px;color:var(--muted);line-height:1.7;text-align:left}
+/* 点评 */
+.note{margin-top:14px;padding:13px 16px;border-radius:12px;font-size:13.5px;line-height:1.75;background:linear-gradient(180deg,#fffdf6,#fff9ea);border:1px solid #f0e3c2;border-left:3px solid var(--gold);color:var(--ink-2)}
+@media (prefers-color-scheme: dark){.note{background:linear-gradient(180deg,#221d12,#1c1810);border-color:#3b3320;border-left-color:var(--gold)}}
+.note b{color:var(--ink);margin-right:6px;letter-spacing:.5px}
+.src-line{margin-top:12px;font-size:11.5px;color:var(--muted);line-height:1.7}
 
-.coin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:12px}
-.coin{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow-sm)}
-.coin-name{font-size:11.5px;color:var(--muted);font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.coin-price{font-size:17px;font-weight:800;color:var(--ink);letter-spacing:.2px}
-.coin .chg-inline{display:block;margin-top:3px}
+/* 币卡 */
+.coin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px}
+.coin{background:linear-gradient(180deg,rgba(11,107,203,.035),rgba(11,107,203,0));border:1px solid var(--line-2);border-radius:13px;padding:13px 15px;transition:transform .18s,box-shadow .18s,border-color .18s}
+.coin:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--line)}
+.coin-name{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.4px;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.coin-price{font-size:17px;font-weight:800;color:var(--ink);letter-spacing:.2px;font-family:var(--serif),var(--sans)}
+.coin .chg-inline{display:block;margin-top:4px}
 
-footer{margin-top:30px;padding:20px 0 8px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.8;text-align:center}
-footer a{color:var(--muted);border-bottom:1px dotted var(--line)}
-footer .sep{margin:0 8px;opacity:.5}
+/* 页脚 */
+footer{margin-top:40px;padding:22px 0 10px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:2;text-align:center;letter-spacing:.2px}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}
+footer .sep{margin:0 9px;opacity:.5}
 
+/* 回到顶部 */
+.top{position:fixed;right:18px;bottom:calc(20px + env(safe-area-inset-bottom));width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink-2);font-size:17px;display:grid;place-items:center;box-shadow:var(--shadow-lg);cursor:pointer;opacity:0;transform:translateY(8px);pointer-events:none;transition:all .25s;z-index:55}
+.top.on{opacity:1;transform:none;pointer-events:auto}
+
+@media (max-width:640px){
+  .hero{grid-template-columns:repeat(2,1fr)}
+  .hero>div:nth-child(3){border-left:0;border-top:1px solid var(--line-2)}
+  .hero>div:nth-child(4){border-top:1px solid var(--line-2)}
+}
 @media (max-width:400px){
+  .wrap{padding:0 14px}
   body{font-size:15px}
-  .brandmark h1{font-size:26px}
-  .card{padding:15px}
-  .mkt-val{font-size:15px}
+  .masthead{padding-top:calc(38px + env(safe-area-inset-top))}
+  .brandmark h1{font-size:27px;letter-spacing:2px}
+  .masthead::after{font-size:92px;bottom:-22px}
+  .news li{padding:15px 15px 15px 44px}
+  .news li::before{left:15px}
+  .data-card{padding:15px 15px}
   .coin-grid{grid-template-columns:repeat(2,1fr)}
   .coin-price{font-size:15px}
+  .sec-head h2{font-size:17px}
+  .ghost{font-size:56px;top:-20px}
 }
 @media print{
-  .toc{display:none!important}
+  .toc,.top,.progress{display:none!important}
   body{background:#fff}
-  .card{box-shadow:none;break-inside:avoid}
+  .card{box-shadow:none;break-inside:avoid;animation:none}
+  .masthead{background:#0a1f38!important;-webkit-print-color-adjust:exact}
 }
 </style>
 </head>
 <body>
+<div class="progress" id="pg"></div>
 <header class="masthead">
   <div class="wrap">
     <div class="brandmark"><h1>全球早报</h1><span class="brand-en">Global Morning Briefing</span></div>
@@ -133,28 +187,77 @@ footer .sep{margin:0 8px;opacity:.5}
 </header>
 <nav class="toc"><div class="wrap"><a href="#s1">全球要闻</a><a href="#s2">全球股市与商品重点数据</a><a href="#s3">科技资讯</a><a href="#s4">加密货币行情</a><a href="#s5">加密资讯</a></div></nav>
 <div class="wrap">
-<div class="flash"><div><span class="k">纳斯达克</span><span class="v num">26140.03 <span class="chg-inline down">▼ 2.14%</span></span></div><div><span class="k">伦敦金(现货黄金)</span><span class="v num">4184.76 美元/盎司 <span class="chg-inline up">▲ 0.50%</span></span></div><div><span class="k">布伦特原油</span><span class="v num">108.05 美元/桶 <span class="chg-inline down">▼ 1.65%</span></span></div><div><span class="k">比特币 BTC</span><span class="v num">$82,085.89 <span class="chg-inline up">▲ 0.75%</span></span></div></div>
+<div class="hero"><div><span class="k">纳斯达克</span><span class="v num">26140.03<em class="down">▼ 2.14%</em></span></div><div><span class="k">伦敦金(现货黄金)</span><span class="v num">4184.76 美元/盎司<em class="up">▲ 0.50%</em></span></div><div><span class="k">布伦特原油</span><span class="v num">108.05 美元/桶<em class="down">▼ 1.65%</em></span></div><div><span class="k">比特币 BTC</span><span class="v num">$82,085.89<em class="up">▲ 0.75%</em></span></div></div>
 <section id="s1">
-  <div class="sec-head"><span class="sec-no">01</span><h2>全球要闻 · TOP5</h2><span class="sec-count">5 条</span></div>
+  <div class="sec-head">
+    <span class="ghost">01</span>
+    <span class="sec-no">01</span>
+    <h2>全球要闻 · TOP5</h2>
+    <span class="sec-count">5 条</span>
+  </div>
   <div class="card"><ol class="news"><li><h3>**利雅得遭袭后，华尔街高层考虑退出"沙漠达沃斯"**</h3><p>沙特利雅得遇袭后，全球金融精英对下周赴沙特参加企业高管与投资者大会愈发顾虑，需在人身安全与触怒东道主之间权衡，部分华尔街高层已考虑退出。</p><div class="src">新浪财经，07:53</div></li><li><h3>**基辅响起强烈爆炸声，俄多地遭大规模袭击，油价开盘下跌**</h3><p>当地时间18日23时许，乌克兰首都基辅多个方向传出强烈爆炸声，俄罗斯多地亦遭大规模袭击。地缘风险升温之际，国际油价开盘反而走低，WTI跌1.41%。</p><div class="src">期货日报/央视，07:33</div></li><li><h3>**纳指重挫2.14%，科技股财报季开启**</h3><p>美股三大指数分化，纳指跌2.14%、标普500跌1.09%。Meta、特斯拉、奈飞本周集中披露Q3业绩，AI投入与高估值成为市场焦点，Meta较谷歌等提前一周放榜。</p><div class="src">新浪财经，07:41</div></li><li><h3>**Nscale投资者敦促下调300亿美元IPO估值目标**</h3><p>英伟达投资的数据中心开发商Nscale，其IPO估值目标遭投资方反对。多家人工智能企业近期接连遭遇市场挫折，AI资产定价正面临重新审视。</p><div class="src">新浪财经，07:59</div></li><li><h3>**三星、SK海力士盘前跌超5%**</h3><p>周一早盘，三星电子与SK海力士在Nextrade盘前交易中跌幅均超5%，存储芯片板块承压，或与AI估值回调及HBM订单预期变化有关。</p><div class="src">新浪财经，07:39</div></li></ol></div>
 </section>
 <section id="s2">
-  <div class="sec-head"><span class="sec-no">02</span><h2>全球股市与商品重点数据</h2></div>
-  <div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">道琼斯</span><span class="mkt-val num">52002.41</span><span class="chg down">▼ 0.34%</span></div><div class="mkt-row"><span class="mkt-name">标普500</span><span class="mkt-val num">7659.44</span><span class="chg down">▼ 1.09%</span></div><div class="mkt-row"><span class="mkt-name">纳斯达克</span><span class="mkt-val num">26140.03</span><span class="chg down">▼ 2.14%</span></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">德国DAX</span><span class="mkt-val num">25622.61</span><span class="chg up">▲ 0.95%</span></div><div class="mkt-row"><span class="mkt-name">法国CAC40</span><span class="mkt-val num">7956.70</span><span class="chg up">▲ 0.28%</span></div><div class="mkt-row"><span class="mkt-name">英国富时100</span><span class="mkt-val num">10881.90</span><span class="chg up">▲ 0.38%</span></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-row"><span class="mkt-name">上证指数</span><span class="mkt-val num">3716.28</span><span class="chg up">▲ 0.24%</span></div><div class="mkt-row"><span class="mkt-name">深证成指</span><span class="mkt-val num">11802.46</span><span class="chg down">▼ 0.12%</span></div><div class="mkt-row"><span class="mkt-name">创业板指</span><span class="mkt-val num">2772.38</span><span class="chg down">▼ 0.39%</span></div><div class="mkt-row"><span class="mkt-name">恒生指数</span><span class="mkt-val num">24186.83</span><span class="chg up">▲ 0.52%</span></div><div class="mkt-row"><span class="mkt-name">日经225</span><span class="mkt-val num">65324.07</span><span class="chg up">▲ 1.39%</span></div><div class="mkt-row"><span class="mkt-name">韩国KOSPI</span><span class="mkt-val num">5668.05</span><span class="chg up">▲ 2.05%</span></div></div><div class="mkt-group"><div class="mkt-row"><span class="mkt-name">伦敦金(现货黄金)</span><span class="mkt-val num">4184.76 美元/盎司</span><span class="chg up">▲ 0.50%</span></div><div class="mkt-row"><span class="mkt-name">上海金Au99.99</span><span class="mkt-val num">855.40 元/克</span><span class="chg up">▲ 0.97%</span></div><div class="mkt-row"><span class="mkt-name">WTI原油</span><span class="mkt-val num">97.63 美元/桶</span><span class="chg down">▼ 1.41%</span></div><div class="mkt-row"><span class="mkt-name">布伦特原油</span><span class="mkt-val num">108.05 美元/桶</span><span class="chg down">▼ 1.65%</span></div></div><div class="note">首饰黄金：首饰金均价 1248.1 元/克；足金回收价 891 元/克（金投网，仅供参考）</div>
+  <div class="sec-head">
+    <span class="ghost">02</span>
+    <span class="sec-no">02</span>
+    <h2>全球股市与商品重点数据</h2>
+    
+  </div>
+  <div class="card data-card"><div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">道琼斯</span><span class="mkt-val num">52002.41</span><span class="chg down">▼ 0.34%</span></div><div class="mkt-row"><span class="mkt-name">标普500</span><span class="mkt-val num">7659.44</span><span class="chg down">▼ 1.09%</span></div><div class="mkt-row"><span class="mkt-name">纳斯达克</span><span class="mkt-val num">26140.03</span><span class="chg down">▼ 2.14%</span></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">德国DAX</span><span class="mkt-val num">25622.61</span><span class="chg up">▲ 0.95%</span></div><div class="mkt-row"><span class="mkt-name">法国CAC40</span><span class="mkt-val num">7956.70</span><span class="chg up">▲ 0.28%</span></div><div class="mkt-row"><span class="mkt-name">英国富时100</span><span class="mkt-val num">10881.90</span><span class="chg up">▲ 0.38%</span></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-row"><span class="mkt-name">上证指数</span><span class="mkt-val num">3716.28</span><span class="chg up">▲ 0.24%</span></div><div class="mkt-row"><span class="mkt-name">深证成指</span><span class="mkt-val num">11802.46</span><span class="chg down">▼ 0.12%</span></div><div class="mkt-row"><span class="mkt-name">创业板指</span><span class="mkt-val num">2772.38</span><span class="chg down">▼ 0.39%</span></div><div class="mkt-row"><span class="mkt-name">恒生指数</span><span class="mkt-val num">24186.83</span><span class="chg up">▲ 0.52%</span></div><div class="mkt-row"><span class="mkt-name">日经225</span><span class="mkt-val num">65324.07</span><span class="chg up">▲ 1.39%</span></div><div class="mkt-row"><span class="mkt-name">韩国KOSPI</span><span class="mkt-val num">5668.05</span><span class="chg up">▲ 2.05%</span></div></div></div><div class="card data-card"><div class="mkt-group"><div class="mkt-row"><span class="mkt-name">伦敦金(现货黄金)</span><span class="mkt-val num">4184.76 美元/盎司</span><span class="chg up">▲ 0.50%</span></div><div class="mkt-row"><span class="mkt-name">上海金Au99.99</span><span class="mkt-val num">855.40 元/克</span><span class="chg up">▲ 0.97%</span></div><div class="mkt-row"><span class="mkt-name">WTI原油</span><span class="mkt-val num">97.63 美元/桶</span><span class="chg down">▼ 1.41%</span></div><div class="mkt-row"><span class="mkt-name">布伦特原油</span><span class="mkt-val num">108.05 美元/桶</span><span class="chg down">▼ 1.65%</span></div></div></div><div class="note">首饰黄金：首饰金均价 1248.1 元/克；足金回收价 891 元/克（金投网，仅供参考）</div>
 </section>
 <section id="s3">
-  <div class="sec-head"><span class="sec-no">03</span><h2>科技资讯</h2><span class="sec-count">3 条</span></div>
+  <div class="sec-head">
+    <span class="ghost">03</span>
+    <span class="sec-no">03</span>
+    <h2>科技资讯</h2>
+    <span class="sec-count">3 条</span>
+  </div>
   <div class="card"><ol class="news"><li><h3>**三星将在英伟达下一代HBM中采用台积电技术**</h3><div class="src">首尔经济日报/新浪，07:41</div></li></ol></div><div class="note">三星电子计划使用台积电3纳米工艺，为英伟达下一代定制高带宽内存生产基底裸片，HBM供应链分工出现新变化。</div><div class="card"><ol class="news"><li><h3>**Anthropic将5%股份注入公益基金，应对AI就业冲击**</h3><div class="src">新浪财经，07:36</div></li></ol></div><div class="note">Anthropic周日宣布，将公司5%股份投入新设公益基金，随估值上升划入比例还可能提高，用于缓解AI对就业的冲击。</div><div class="card"><ol class="news"><li><h3>**中信建投：从流动性到通胀**</h3><div class="src">中信建投研究，07:27</div></li></ol></div><div class="note">海外定价主线仍围绕流动性展开，地缘带来的油价不确定性、9月以来油价反复波折，是影响通胀与资产价格的关键变量。</div>
 </section>
 <section id="s4">
-  <div class="sec-head"><span class="sec-no">04</span><h2>加密货币行情</h2></div>
-  <div class="coin-grid"><div class="coin"><div class="coin-name">比特币 BTC</div><div class="coin-price num">$82,085.89</div><div class="chg-inline up">▲ 0.75%</div></div><div class="coin"><div class="coin-name">以太坊 ETH</div><div class="coin-price num">$2,409.56</div><div class="chg-inline up">▲ 0.29%</div></div><div class="coin"><div class="coin-name">Solana SOL</div><div class="coin-price num">$104.07</div><div class="chg-inline up">▲ 0.58%</div></div><div class="coin"><div class="coin-name">BNB</div><div class="coin-price num">$723.44</div><div class="chg-inline up">▲ 0.73%</div></div><div class="coin"><div class="coin-name">瑞波 XRP</div><div class="coin-price num">$1.31</div><div class="chg-inline up">▲ 1.00%</div></div><div class="coin"><div class="coin-name">狗狗币 DOGE</div><div class="coin-price num">$0.0794</div><div class="chg-inline up">▲ 0.13%</div></div><div class="coin"><div class="coin-name">柴犬币 SHIB</div><div class="coin-price num">$0.00000498</div><div class="chg-inline down">▼ 0.20%</div></div><div class="coin"><div class="coin-name">特朗普币 TRUMP</div><div class="coin-price num">$1.73</div><div class="chg-inline down">▼ 1.48%</div></div><div class="coin"><div class="coin-name">艾达 ADA</div><div class="coin-price num">$0.2211</div><div class="chg-inline up">▲ 0.78%</div></div><div class="coin"><div class="coin-name">雪崩 AVAX</div><div class="coin-price num">$9.77</div><div class="chg-inline up">▲ 0.01%</div></div><div class="coin"><div class="coin-name">Chainlink LINK</div><div class="coin-price num">$12.04</div><div class="chg-inline up">▲ 0.40%</div></div><div class="coin"><div class="coin-name">波场 TRX</div><div class="coin-price num">$0.3327</div><div class="chg-inline down">▼ 0.27%</div></div></div>
+  <div class="sec-head">
+    <span class="ghost">04</span>
+    <span class="sec-no">04</span>
+    <h2>加密货币行情</h2>
+    
+  </div>
+  <div class="card data-card"><div class="coin-grid"><div class="coin"><div class="coin-name">比特币 BTC</div><div class="coin-price num">$82,085.89</div><div class="chg-inline up">▲ 0.75%</div></div><div class="coin"><div class="coin-name">以太坊 ETH</div><div class="coin-price num">$2,409.56</div><div class="chg-inline up">▲ 0.29%</div></div><div class="coin"><div class="coin-name">Solana SOL</div><div class="coin-price num">$104.07</div><div class="chg-inline up">▲ 0.58%</div></div><div class="coin"><div class="coin-name">BNB</div><div class="coin-price num">$723.44</div><div class="chg-inline up">▲ 0.73%</div></div><div class="coin"><div class="coin-name">瑞波 XRP</div><div class="coin-price num">$1.31</div><div class="chg-inline up">▲ 1.00%</div></div><div class="coin"><div class="coin-name">狗狗币 DOGE</div><div class="coin-price num">$0.0794</div><div class="chg-inline up">▲ 0.13%</div></div><div class="coin"><div class="coin-name">柴犬币 SHIB</div><div class="coin-price num">$0.00000498</div><div class="chg-inline down">▼ 0.20%</div></div><div class="coin"><div class="coin-name">特朗普币 TRUMP</div><div class="coin-price num">$1.73</div><div class="chg-inline down">▼ 1.48%</div></div><div class="coin"><div class="coin-name">艾达 ADA</div><div class="coin-price num">$0.2211</div><div class="chg-inline up">▲ 0.78%</div></div><div class="coin"><div class="coin-name">雪崩 AVAX</div><div class="coin-price num">$9.77</div><div class="chg-inline up">▲ 0.01%</div></div><div class="coin"><div class="coin-name">Chainlink LINK</div><div class="coin-price num">$12.04</div><div class="chg-inline up">▲ 0.40%</div></div><div class="coin"><div class="coin-name">波场 TRX</div><div class="coin-price num">$0.3327</div><div class="chg-inline down">▼ 0.27%</div></div></div></div>
 </section>
 <section id="s5">
-  <div class="sec-head"><span class="sec-no">05</span><h2>加密资讯</h2><span class="sec-count">3 条</span></div>
+  <div class="sec-head">
+    <span class="ghost">05</span>
+    <span class="sec-no">05</span>
+    <h2>加密资讯</h2>
+    <span class="sec-count">3 条</span>
+  </div>
   <div class="card"><ol class="news"><li><h3>**新加坡CARF落地：加密税务透明化进入执行阶段**</h3><div class="src">新浪区块链，10-18</div></li></ol></div><div class="note">加密资产报告框架在新加坡进入执行阶段，税务信息跨境交换趋严，交易所与用户的合规成本同步上升。</div><div class="card"><ol class="news"><li><h3>**a16z：AI尚未威胁现代密码学，反而可能加速安全审查**</h3><div class="src">新浪区块链，10-18</div></li></ol></div><div class="note">a16z认为当前AI能力不足以破解主流密码体系，但会推动行业提前加固与审查，安全赛道关注度提升。</div><div class="card"><ol class="news"><li><h3>**股票代币化繁荣背后：谁在赚钱，谁在替人做嫁衣？**</h3><div class="src">新浪区块链，10-17</div></li></ol></div><div class="note">股票代币化规模扩张，但价值链利润分配不均，发行方与渠道方的博弈成为观察RWA可持续性的关键。</div><div class="src-line">数据来源：腾讯行情/新浪财经、金投网、Binance公共行情API、新浪财经滚动新闻与区块链频道。行情截至2026/10/19 08:00。</div>
 </section>
   <footer>由阿贵自动生成 · 2026年10月19日 星期一<span class="sep">|</span><a href="./">返回今日</a><span class="sep">|</span>数据来源见各条目标注</footer>
 </div>
+<button class="top" id="tp" aria-label="回到顶部">↑</button>
+<script>
+(function(){
+  var pg=document.getElementById('pg'),tp=document.getElementById('tp');
+  function onScroll(){
+    var h=document.documentElement,s=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);
+    pg.style.width=(s*100)+'%';
+    tp.classList.toggle('on',h.scrollTop>620);
+  }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  tp.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'});});
+  var links=[].slice.call(document.querySelectorAll('.toc a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});
+        }
+      });
+    },{rootMargin:'-42% 0px -52% 0px'});
+    links.forEach(function(a){var t=document.querySelector(a.getAttribute('href')); if(t) io.observe(t);});
+  }
+})();
+</script>
 </body>
 </html>
