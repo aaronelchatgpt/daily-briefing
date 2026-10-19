@@ -121,7 +121,7 @@ section{scroll-margin-top:70px}
 .news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
 .news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
 .news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
-.src{font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:.3px}
+.src{display:inline-block;margin-left:8px;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.2px;vertical-align:baseline}
 
 /* 行情 */
 .mkt-group+.mkt-group{margin-top:16px}
@@ -173,8 +173,8 @@ footer .sep{margin:0 9px;opacity:.5}
   .masthead{padding-top:calc(38px + env(safe-area-inset-top))}
   .brandmark h1{font-size:27px;letter-spacing:2px}
   .masthead::after{font-size:92px;bottom:-22px}
-  .news li{padding:15px 15px 15px 44px}
-  .news li::before{left:15px}
+  .news li{padding:20px 15px 20px 44px}
+  .news li::before{left:15px;top:19px}
   .data-card{padding:15px 15px}
   .coin-grid{grid-template-columns:repeat(2,1fr)}
   .coin-price{font-size:15px}
@@ -215,7 +215,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>全球要闻 · TOP5</h2>
     <span class="sec-count">5 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>利雅得遭袭后，华尔街高层考虑退出"沙漠达沃斯"</h3><p>沙特利雅得遇袭后，全球金融精英对下周赴沙特参加企业高管与投资者大会愈发顾虑，需在人身安全与触怒东道主之间权衡，部分华尔街高层已考虑退出。</p><div class="src">新浪财经，07:53</div></li><li><h3>基辅响起强烈爆炸声，俄多地遭大规模袭击，油价开盘下跌</h3><p>当地时间18日23时许，乌克兰首都基辅多个方向传出强烈爆炸声，俄罗斯多地亦遭大规模袭击。地缘风险升温之际，国际油价开盘反而走低，WTI跌1.41%。</p><div class="src">期货日报/央视，07:33</div></li><li><h3>纳指重挫2.14%，科技股财报季开启</h3><p>美股三大指数分化，纳指跌2.14%、标普500跌1.09%。Meta、特斯拉、奈飞本周集中披露Q3业绩，AI投入与高估值成为市场焦点，Meta较谷歌等提前一周放榜。</p><div class="src">新浪财经，07:41</div></li><li><h3>Nscale投资者敦促下调300亿美元IPO估值目标</h3><p>英伟达投资的数据中心开发商Nscale，其IPO估值目标遭投资方反对。多家人工智能企业近期接连遭遇市场挫折，AI资产定价正面临重新审视。</p><div class="src">新浪财经，07:59</div></li><li><h3>三星、SK海力士盘前跌超5%</h3><p>周一早盘，三星电子与SK海力士在Nextrade盘前交易中跌幅均超5%，存储芯片板块承压，或与AI估值回调及HBM订单预期变化有关。</p><div class="src">新浪财经，07:39</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>利雅得遭袭后，华尔街高层考虑退出"沙漠达沃斯"<span class="src">新浪财经，07:53</span></h3><p>沙特利雅得遇袭后，全球金融精英对下周赴沙特参加企业高管与投资者大会愈发顾虑，需在人身安全与触怒东道主之间权衡，部分华尔街高层已考虑退出。</p></li><li><h3>基辅响起强烈爆炸声，俄多地遭大规模袭击，油价开盘下跌<span class="src">期货日报/央视，07:33</span></h3><p>当地时间18日23时许，乌克兰首都基辅多个方向传出强烈爆炸声，俄罗斯多地亦遭大规模袭击。地缘风险升温之际，国际油价开盘反而走低，WTI跌1.41%。</p></li><li><h3>纳指重挫2.14%，科技股财报季开启<span class="src">新浪财经，07:41</span></h3><p>美股三大指数分化，纳指跌2.14%、标普500跌1.09%。Meta、特斯拉、奈飞本周集中披露Q3业绩，AI投入与高估值成为市场焦点，Meta较谷歌等提前一周放榜。</p></li><li><h3>Nscale投资者敦促下调300亿美元IPO估值目标<span class="src">新浪财经，07:59</span></h3><p>英伟达投资的数据中心开发商Nscale，其IPO估值目标遭投资方反对。多家人工智能企业近期接连遭遇市场挫折，AI资产定价正面临重新审视。</p></li><li><h3>三星、SK海力士盘前跌超5%<span class="src">新浪财经，07:39</span></h3><p>周一早盘，三星电子与SK海力士在Nextrade盘前交易中跌幅均超5%，存储芯片板块承压，或与AI估值回调及HBM订单预期变化有关。</p></li></ol></div>
 </section>
 <section id="s2">
   <div class="sec-head">
@@ -233,7 +233,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>科技资讯</h2>
     <span class="sec-count">3 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>三星将在英伟达下一代HBM中采用台积电技术</h3><div class="src">首尔经济日报/新浪，07:41</div></li></ol></div><div class="note">三星电子计划使用台积电3纳米工艺，为英伟达下一代定制高带宽内存生产基底裸片，HBM供应链分工出现新变化。</div><div class="card"><ol class="news"><li><h3>Anthropic将5%股份注入公益基金，应对AI就业冲击</h3><div class="src">新浪财经，07:36</div></li></ol></div><div class="note">Anthropic周日宣布，将公司5%股份投入新设公益基金，随估值上升划入比例还可能提高，用于缓解AI对就业的冲击。</div><div class="card"><ol class="news"><li><h3>中信建投：从流动性到通胀</h3><div class="src">中信建投研究，07:27</div></li></ol></div><div class="note">海外定价主线仍围绕流动性展开，地缘带来的油价不确定性、9月以来油价反复波折，是影响通胀与资产价格的关键变量。</div>
+  <div class="card"><ol class="news"><li><h3>三星将在英伟达下一代HBM中采用台积电技术<span class="src">首尔经济日报/新浪，07:41</span></h3></li></ol></div><div class="note">三星电子计划使用台积电3纳米工艺，为英伟达下一代定制高带宽内存生产基底裸片，HBM供应链分工出现新变化。</div><div class="card"><ol class="news"><li><h3>Anthropic将5%股份注入公益基金，应对AI就业冲击<span class="src">新浪财经，07:36</span></h3></li></ol></div><div class="note">Anthropic周日宣布，将公司5%股份投入新设公益基金，随估值上升划入比例还可能提高，用于缓解AI对就业的冲击。</div><div class="card"><ol class="news"><li><h3>中信建投：从流动性到通胀<span class="src">中信建投研究，07:27</span></h3></li></ol></div><div class="note">海外定价主线仍围绕流动性展开，地缘带来的油价不确定性、9月以来油价反复波折，是影响通胀与资产价格的关键变量。</div>
 </section>
 <section id="s4">
   <div class="sec-head">
@@ -251,7 +251,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>加密资讯</h2>
     <span class="sec-count">3 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>新加坡CARF落地：加密税务透明化进入执行阶段</h3><div class="src">新浪区块链，10-18</div></li></ol></div><div class="note">加密资产报告框架在新加坡进入执行阶段，税务信息跨境交换趋严，交易所与用户的合规成本同步上升。</div><div class="card"><ol class="news"><li><h3>a16z：AI尚未威胁现代密码学，反而可能加速安全审查</h3><div class="src">新浪区块链，10-18</div></li></ol></div><div class="note">a16z认为当前AI能力不足以破解主流密码体系，但会推动行业提前加固与审查，安全赛道关注度提升。</div><div class="card"><ol class="news"><li><h3>股票代币化繁荣背后：谁在赚钱，谁在替人做嫁衣？</h3><div class="src">新浪区块链，10-17</div></li></ol></div><div class="note">股票代币化规模扩张，但价值链利润分配不均，发行方与渠道方的博弈成为观察RWA可持续性的关键。</div><div class="src-line">数据来源：腾讯行情/新浪财经、金投网、Binance公共行情API、新浪财经滚动新闻与区块链频道。行情截至2026/10/19 08:00。</div>
+  <div class="card"><ol class="news"><li><h3>新加坡CARF落地：加密税务透明化进入执行阶段<span class="src">新浪区块链，10-18</span></h3></li></ol></div><div class="note">加密资产报告框架在新加坡进入执行阶段，税务信息跨境交换趋严，交易所与用户的合规成本同步上升。</div><div class="card"><ol class="news"><li><h3>a16z：AI尚未威胁现代密码学，反而可能加速安全审查<span class="src">新浪区块链，10-18</span></h3></li></ol></div><div class="note">a16z认为当前AI能力不足以破解主流密码体系，但会推动行业提前加固与审查，安全赛道关注度提升。</div><div class="card"><ol class="news"><li><h3>股票代币化繁荣背后：谁在赚钱，谁在替人做嫁衣？<span class="src">新浪区块链，10-17</span></h3></li></ol></div><div class="note">股票代币化规模扩张，但价值链利润分配不均，发行方与渠道方的博弈成为观察RWA可持续性的关键。</div><div class="src-line">数据来源：腾讯行情/新浪财经、金投网、Binance公共行情API、新浪财经滚动新闻与区块链频道。行情截至2026/10/19 08:00。</div>
 </section>
   <footer>由阿贵自动生成 · 2026年10月19日 星期一<span class="sep">|</span><a href="./">返回今日</a><span class="sep">|</span>数据来源见各条目标注</footer>
 </div>

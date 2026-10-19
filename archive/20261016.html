@@ -121,7 +121,7 @@ section{scroll-margin-top:70px}
 .news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
 .news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
 .news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
-.src{font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:.3px}
+.src{display:inline-block;margin-left:8px;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.2px;vertical-align:baseline}
 
 /* 行情 */
 .mkt-group+.mkt-group{margin-top:16px}
@@ -173,8 +173,8 @@ footer .sep{margin:0 9px;opacity:.5}
   .masthead{padding-top:calc(38px + env(safe-area-inset-top))}
   .brandmark h1{font-size:27px;letter-spacing:2px}
   .masthead::after{font-size:92px;bottom:-22px}
-  .news li{padding:15px 15px 15px 44px}
-  .news li::before{left:15px}
+  .news li{padding:20px 15px 20px 44px}
+  .news li::before{left:15px;top:19px}
   .data-card{padding:15px 15px}
   .coin-grid{grid-template-columns:repeat(2,1fr)}
   .coin-price{font-size:15px}
@@ -215,7 +215,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>全球要闻 · TOP5</h2>
     <span class="sec-count">5 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>标普500结束三连跌 逢低买盘盖过AI和通胀担忧</h3><p>标普500周四剧烈震荡后反弹收高，逢低买盘推动指数结束三连跌；此前AI交易与顽固通胀担忧持续令市场承压。</p><div class="src">新浪财经 10-16 05:38</div></li><li><h3>美元创逾一个月最大跌幅 AI担忧推动资金涌入美债</h3><p>彭博美元指数周四下跌0.3%，创9月3日以来最大跌幅，抹去通胀数据超预期带来的涨幅，AI担忧推动美债上涨。</p><div class="src">10-16 05:42</div></li><li><h3>美联储官员警示通胀持续性</h3><p>旧金山联储行长戴利称越来越担心通胀持续性，不再相信供应冲击影响会自行消退；克利夫兰联储哈马克同样担忧供应冲击催生通胀思维。</p><div class="src">10-16 06:37</div></li><li><h3>OpenAI广告收入或难以达标 大举招揽谷歌、Meta人才</h3><p>OpenAI与Anthropic持续推出新模型争夺开发者，广告业务从顺带布局转为重点，但收入目标或难达成，公司正大规模招人。</p><div class="src">10-16 06:52</div></li><li><h3>IEA释放石油储备消息推动布伦特走低 与WTI分化</h3><p>有关释放紧急石油储备的新消息，抵消了霍尔木兹海峡到黑海供应风险上升的影响，布伦特小幅下跌，WTI独自大涨。</p><div class="src">10-16 05:39</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>标普500结束三连跌 逢低买盘盖过AI和通胀担忧<span class="src">新浪财经 10-16 05:38</span></h3><p>标普500周四剧烈震荡后反弹收高，逢低买盘推动指数结束三连跌；此前AI交易与顽固通胀担忧持续令市场承压。</p></li><li><h3>美元创逾一个月最大跌幅 AI担忧推动资金涌入美债<span class="src">10-16 05:42</span></h3><p>彭博美元指数周四下跌0.3%，创9月3日以来最大跌幅，抹去通胀数据超预期带来的涨幅，AI担忧推动美债上涨。</p></li><li><h3>美联储官员警示通胀持续性<span class="src">10-16 06:37</span></h3><p>旧金山联储行长戴利称越来越担心通胀持续性，不再相信供应冲击影响会自行消退；克利夫兰联储哈马克同样担忧供应冲击催生通胀思维。</p></li><li><h3>OpenAI广告收入或难以达标 大举招揽谷歌、Meta人才<span class="src">10-16 06:52</span></h3><p>OpenAI与Anthropic持续推出新模型争夺开发者，广告业务从顺带布局转为重点，但收入目标或难达成，公司正大规模招人。</p></li><li><h3>IEA释放石油储备消息推动布伦特走低 与WTI分化<span class="src">10-16 05:39</span></h3><p>有关释放紧急石油储备的新消息，抵消了霍尔木兹海峡到黑海供应风险上升的影响，布伦特小幅下跌，WTI独自大涨。</p></li></ol></div>
 </section>
 <section id="s2">
   <div class="sec-head">
@@ -233,7 +233,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>科技资讯</h2>
     <span class="sec-count">4 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>谷歌突破量子计算核心资源瓶颈</h3><div class="src">新浪财经 10-16 06:53</div></li><li><h3>Meta推出"最强"开源权重大模型 Muse Spark Open，专为苹果Mac打造，可在本地运行</h3><div class="src">10-16 05:16</div></li><li><h3>Anthropic向外部评估人员开放近似内部员工级别权限，用于评估大模型安全风险</h3><div class="src">10-16 05:19</div></li><li><h3>英伟达发布Nemotron 3.5 Super VL，当日收跌1.84%；CoreWeave收涨5.94%，黄仁勋称英伟达无必要为其兜底</h3><div class="src">10-16 06:04</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>谷歌突破量子计算核心资源瓶颈<span class="src">新浪财经 10-16 06:53</span></h3></li><li><h3>Meta推出"最强"开源权重大模型 Muse Spark Open，专为苹果Mac打造，可在本地运行<span class="src">10-16 05:16</span></h3></li><li><h3>Anthropic向外部评估人员开放近似内部员工级别权限，用于评估大模型安全风险<span class="src">10-16 05:19</span></h3></li><li><h3>英伟达发布Nemotron 3.5 Super VL，当日收跌1.84%；CoreWeave收涨5.94%，黄仁勋称英伟达无必要为其兜底<span class="src">10-16 06:04</span></h3></li></ol></div>
 </section>
 <section id="s4">
   <div class="sec-head">
@@ -251,7 +251,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>加密资讯</h2>
     <span class="sec-count">3 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>沪港数字人民币跨境资金通道再迎重大突破，数亿元秒级到账</h3><div class="src">新浪区块链 10-15</div></li><li><h3>营收为王：加密项目估值逻辑正在改写</h3><div class="src">新浪区块链 10-15</div></li><li><h3>白线日报：Anthropic单季收入达168亿美元，Modal估值升至157.5亿美元</h3><div class="src">新浪区块链 10-15</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>沪港数字人民币跨境资金通道再迎重大突破，数亿元秒级到账<span class="src">新浪区块链 10-15</span></h3></li><li><h3>营收为王：加密项目估值逻辑正在改写<span class="src">新浪区块链 10-15</span></h3></li><li><h3>白线日报：Anthropic单季收入达168亿美元，Modal估值升至157.5亿美元<span class="src">新浪区块链 10-15</span></h3></li></ol></div>
 </section>
   <footer>由阿贵自动生成 · 2026年10月16日 星期五<span class="sep">|</span><a href="./">返回今日</a><span class="sep">|</span>数据来源见各条目标注</footer>
 </div>

@@ -121,7 +121,7 @@ section{scroll-margin-top:70px}
 .news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
 .news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
 .news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
-.src{font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:.3px}
+.src{display:inline-block;margin-left:8px;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.2px;vertical-align:baseline}
 
 /* 行情 */
 .mkt-group+.mkt-group{margin-top:16px}
@@ -173,8 +173,8 @@ footer .sep{margin:0 9px;opacity:.5}
   .masthead{padding-top:calc(38px + env(safe-area-inset-top))}
   .brandmark h1{font-size:27px;letter-spacing:2px}
   .masthead::after{font-size:92px;bottom:-22px}
-  .news li{padding:15px 15px 15px 44px}
-  .news li::before{left:15px}
+  .news li{padding:20px 15px 20px 44px}
+  .news li::before{left:15px;top:19px}
   .data-card{padding:15px 15px}
   .coin-grid{grid-template-columns:repeat(2,1fr)}
   .coin-price{font-size:15px}
@@ -215,7 +215,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>全球要闻 · TOP5</h2>
     <span class="sec-count">5 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>【美国9月CPI超预期，加息预期升温】美国9月CPI同比3.7%，高于预期3.6%，前值3.4%；核心CPI同比2.6%，预估2.5%。通胀数据全线走高，市场对美联储紧缩担忧升温，全球风险资产承压。</h3><div class="src">新浪财经 07:48</div></li><li><h3>【韩国KOSPI暴跌5.46%，芯片股抛售潮延续】受投资者对AI相关交易疑虑加剧影响，韩国综合指数连续七日下跌，盘中最大跌幅达5.7%，收报5680.91点，创7月31日以来最低。</h3><div class="src">新浪财经 08:07</div></li><li><h3>【台积电财报面临高门槛】台积电周四将公布财报，在全球芯片大厂强劲业绩未能提振AI交易之际，若要打动投资者势将面临相当高的门槛，市场关注其能否平息板块抛售潮。</h3><div class="src">新浪财经 07:47</div></li><li><h3>【美联储或12月加息50个基点】Prestige Economics总裁Jason Schenker表示，美联储10月可能按兵不动，12月则有可能加息0.5个百分点。</h3><div class="src">新浪财经 07:43</div></li><li><h3>【特朗普称加拿大"终将"成为美国第51个州】美国总统特朗普在当地时间周三向支持者发表讲话时声称，加拿大"最终会成为（美国的）第51个州"，并再次发泄对该北方邻国长期积攒的不满。</h3><div class="src">新浪财经 08:13</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>【美国9月CPI超预期，加息预期升温】美国9月CPI同比3.7%，高于预期3.6%，前值3.4%；核心CPI同比2.6%，预估2.5%。通胀数据全线走高，市场对美联储紧缩担忧升温，全球风险资产承压。<span class="src">新浪财经 07:48</span></h3></li><li><h3>【韩国KOSPI暴跌5.46%，芯片股抛售潮延续】受投资者对AI相关交易疑虑加剧影响，韩国综合指数连续七日下跌，盘中最大跌幅达5.7%，收报5680.91点，创7月31日以来最低。<span class="src">新浪财经 08:07</span></h3></li><li><h3>【台积电财报面临高门槛】台积电周四将公布财报，在全球芯片大厂强劲业绩未能提振AI交易之际，若要打动投资者势将面临相当高的门槛，市场关注其能否平息板块抛售潮。<span class="src">新浪财经 07:47</span></h3></li><li><h3>【美联储或12月加息50个基点】Prestige Economics总裁Jason Schenker表示，美联储10月可能按兵不动，12月则有可能加息0.5个百分点。<span class="src">新浪财经 07:43</span></h3></li><li><h3>【特朗普称加拿大"终将"成为美国第51个州】美国总统特朗普在当地时间周三向支持者发表讲话时声称，加拿大"最终会成为（美国的）第51个州"，并再次发泄对该北方邻国长期积攒的不满。<span class="src">新浪财经 08:13</span></h3></li></ol></div>
 </section>
 <section id="s2">
   <div class="sec-head">
@@ -224,7 +224,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>全球股市与商品重点数据</h2>
     <span class="sec-count">1 条</span>
   </div>
-  <div class="card data-card"><div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">道琼斯</span><span class="mkt-val num">51621.48</span><span class="chg down">▼ 0.09%</span></div><div class="mkt-row"><span class="mkt-name">标普500</span><span class="mkt-val num">7718.94</span><span class="chg down">▼ 1.11%</span></div><div class="mkt-row"><span class="mkt-name">纳斯达克</span><span class="mkt-val num">26692.87</span><span class="chg down">▼ 1.88%</span></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">德国DAX</span><span class="mkt-val num">25298.61</span><span class="chg up">▲ 0.15%</span></div><div class="mkt-row"><span class="mkt-name">法国CAC40</span><span class="mkt-val num">7873.11</span><span class="chg up">▲ 0.58%</span></div><div class="mkt-row"><span class="mkt-name">英国富时100</span><span class="mkt-val num">10724.86</span><span class="chg up">▲ 0.70%</span></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-row"><span class="mkt-name">上证指数</span><span class="mkt-val num">3767.23</span><span class="chg down">▼ 0.88%</span></div><div class="mkt-row"><span class="mkt-name">深证成指</span><span class="mkt-val num">12110.59</span><span class="chg down">▼ 1.97%</span></div><div class="mkt-row"><span class="mkt-name">创业板指</span><span class="mkt-val num">2866.76</span><span class="chg down">▼ 3.10%</span></div><div class="mkt-row"><span class="mkt-name">恒生指数</span><span class="mkt-val num">24314.17</span><span class="chg down">▼ 0.13%</span></div><div class="mkt-row"><span class="mkt-name">日经225</span><span class="mkt-val num">65594.17</span><span class="chg down">▼ 3.17%</span></div><div class="mkt-row"><span class="mkt-name">韩国KOSPI</span><span class="mkt-val num">5680.91</span><span class="chg down">▼ 5.46%</span></div></div></div><div class="card data-card"><div class="mkt-group"><div class="mkt-row"><span class="mkt-name">伦敦金(现货黄金)</span><span class="mkt-val num">4126.27</span><span class="chg up">▲ 0.51%</span></div><div class="mkt-row"><span class="mkt-name">上海金Au99.99</span><span class="mkt-val num">850.10</span><span class="chg down">▼ 1.14%</span></div><div class="mkt-row"><span class="mkt-name">WTI原油</span><span class="mkt-val num">94.69</span><span class="chg down">▼ 0.42%</span></div><div class="mkt-row"><span class="mkt-name">布伦特原油</span><span class="mkt-val num">105.51</span><span class="chg down">▼ 0.52%</span></div></div></div><div class="card"><ol class="news"><li><h3>首饰黄金（金投网，仅供参考）：首饰金均价 1251.9 元/克；足金回收 888 元/克</h3><div class="src">金条回收887，24K 880，18K 657</div></li></ol></div><div class="src-line">来源：腾讯行情/新浪财经；首饰金价来源金投网（10月15日 07:00左右）</div>
+  <div class="card data-card"><div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">道琼斯</span><span class="mkt-val num">51621.48</span><span class="chg down">▼ 0.09%</span></div><div class="mkt-row"><span class="mkt-name">标普500</span><span class="mkt-val num">7718.94</span><span class="chg down">▼ 1.11%</span></div><div class="mkt-row"><span class="mkt-name">纳斯达克</span><span class="mkt-val num">26692.87</span><span class="chg down">▼ 1.88%</span></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">德国DAX</span><span class="mkt-val num">25298.61</span><span class="chg up">▲ 0.15%</span></div><div class="mkt-row"><span class="mkt-name">法国CAC40</span><span class="mkt-val num">7873.11</span><span class="chg up">▲ 0.58%</span></div><div class="mkt-row"><span class="mkt-name">英国富时100</span><span class="mkt-val num">10724.86</span><span class="chg up">▲ 0.70%</span></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-row"><span class="mkt-name">上证指数</span><span class="mkt-val num">3767.23</span><span class="chg down">▼ 0.88%</span></div><div class="mkt-row"><span class="mkt-name">深证成指</span><span class="mkt-val num">12110.59</span><span class="chg down">▼ 1.97%</span></div><div class="mkt-row"><span class="mkt-name">创业板指</span><span class="mkt-val num">2866.76</span><span class="chg down">▼ 3.10%</span></div><div class="mkt-row"><span class="mkt-name">恒生指数</span><span class="mkt-val num">24314.17</span><span class="chg down">▼ 0.13%</span></div><div class="mkt-row"><span class="mkt-name">日经225</span><span class="mkt-val num">65594.17</span><span class="chg down">▼ 3.17%</span></div><div class="mkt-row"><span class="mkt-name">韩国KOSPI</span><span class="mkt-val num">5680.91</span><span class="chg down">▼ 5.46%</span></div></div></div><div class="card data-card"><div class="mkt-group"><div class="mkt-row"><span class="mkt-name">伦敦金(现货黄金)</span><span class="mkt-val num">4126.27</span><span class="chg up">▲ 0.51%</span></div><div class="mkt-row"><span class="mkt-name">上海金Au99.99</span><span class="mkt-val num">850.10</span><span class="chg down">▼ 1.14%</span></div><div class="mkt-row"><span class="mkt-name">WTI原油</span><span class="mkt-val num">94.69</span><span class="chg down">▼ 0.42%</span></div><div class="mkt-row"><span class="mkt-name">布伦特原油</span><span class="mkt-val num">105.51</span><span class="chg down">▼ 0.52%</span></div></div></div><div class="card"><ol class="news"><li><h3>首饰黄金（金投网，仅供参考）：首饰金均价 1251.9 元/克；足金回收 888 元/克<span class="src">金条回收887，24K 880，18K 657</span></h3></li></ol></div><div class="src-line">来源：腾讯行情/新浪财经；首饰金价来源金投网（10月15日 07:00左右）</div>
 </section>
 <section id="s3">
   <div class="sec-head">
@@ -233,7 +233,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>科技资讯</h2>
     <span class="sec-count">3 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>【AI短剧概念爆发】短剧、漫剧、AI剧成为内容生态新竞争主线。10月14日AI短剧/漫剧概念再度爆发，并从传媒、影视扩散到游戏行业，多只概念股涨停。</h3><div class="src">新浪财经 07:48</div></li><li><h3>【长鑫科技获省级调研关注】安徽省委书记李乐成10月14日赴长鑫科技调研并主持座谈会，指出要突出科技创新供给和产业需求牵引，支持企业与高校协同攻关。</h3><div class="src">新浪财经 07:57</div></li><li><h3>【OpenAI工程师涉窃听设备案】FBI称一名OpenAI员工利用其妻子的ChatGPT账号，研究如何在公司办公室内安装秘密录音设备，OpenAI已于周二作出回应。</h3><div class="src">新浪财经 07:58</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>【AI短剧概念爆发】短剧、漫剧、AI剧成为内容生态新竞争主线。10月14日AI短剧/漫剧概念再度爆发，并从传媒、影视扩散到游戏行业，多只概念股涨停。<span class="src">新浪财经 07:48</span></h3></li><li><h3>【长鑫科技获省级调研关注】安徽省委书记李乐成10月14日赴长鑫科技调研并主持座谈会，指出要突出科技创新供给和产业需求牵引，支持企业与高校协同攻关。<span class="src">新浪财经 07:57</span></h3></li><li><h3>【OpenAI工程师涉窃听设备案】FBI称一名OpenAI员工利用其妻子的ChatGPT账号，研究如何在公司办公室内安装秘密录音设备，OpenAI已于周二作出回应。<span class="src">新浪财经 07:58</span></h3></li></ol></div>
 </section>
 <section id="s4">
   <div class="sec-head">
@@ -251,7 +251,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>加密资讯</h2>
     <span class="sec-count">3 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>【ASML净利润环比增长70%，CoreWeave年内融资超350亿美元】半导体与AI算力链继续吸金，行业资本开支热度不减。</h3><div class="src">新浪区块链 2026-10-14</div></li><li><h3>【三星手机钱包支持USDC跨境汇款】三星手机钱包上线USDC跨境汇款功能，直接切入银行汇款生意，稳定币支付场景再获大厂背书。</h3><div class="src">新浪区块链 2026-10-13</div></li><li><h3>【多国央行加码数字货币】江苏农商联合银行公开招标采购114台数字人民币服务器；韩国央行国会审计定调CBDC、稳定币、债券代币化结算三大关键点。</h3><div class="src">新浪区块链 2026-10-14 / 10-13</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>【ASML净利润环比增长70%，CoreWeave年内融资超350亿美元】半导体与AI算力链继续吸金，行业资本开支热度不减。<span class="src">新浪区块链 2026-10-14</span></h3></li><li><h3>【三星手机钱包支持USDC跨境汇款】三星手机钱包上线USDC跨境汇款功能，直接切入银行汇款生意，稳定币支付场景再获大厂背书。<span class="src">新浪区块链 2026-10-13</span></h3></li><li><h3>【多国央行加码数字货币】江苏农商联合银行公开招标采购114台数字人民币服务器；韩国央行国会审计定调CBDC、稳定币、债券代币化结算三大关键点。<span class="src">新浪区块链 2026-10-14 / 10-13</span></h3></li></ol></div>
 </section>
   <footer>由阿贵自动生成 · 2026年10月15日 星期四<span class="sep">|</span><a href="./">返回今日</a><span class="sep">|</span>数据来源见各条目标注</footer>
 </div>

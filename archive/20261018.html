@@ -121,7 +121,7 @@ section{scroll-margin-top:70px}
 .news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
 .news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
 .news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
-.src{font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:.3px}
+.src{display:inline-block;margin-left:8px;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.2px;vertical-align:baseline}
 
 /* 行情 */
 .mkt-group+.mkt-group{margin-top:16px}
@@ -173,8 +173,8 @@ footer .sep{margin:0 9px;opacity:.5}
   .masthead{padding-top:calc(38px + env(safe-area-inset-top))}
   .brandmark h1{font-size:27px;letter-spacing:2px}
   .masthead::after{font-size:92px;bottom:-22px}
-  .news li{padding:15px 15px 15px 44px}
-  .news li::before{left:15px}
+  .news li{padding:20px 15px 20px 44px}
+  .news li::before{left:15px;top:19px}
   .data-card{padding:15px 15px}
   .coin-grid{grid-template-columns:repeat(2,1fr)}
   .coin-price{font-size:15px}
@@ -215,7 +215,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>全球要闻 · TOP5</h2>
     <span class="sec-count">5 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>霍尔木兹海峡冲突升级：伊朗武装部队开火拦截海峡内"违规"通行船只，中东航运风险骤升，国际油价单日跳涨近4%，布伦特重回110美元附近。</h3><div class="src">新浪财经 06:29</div></li><li><h3>乌克兰和平方案博弈：特朗普政府提议和平协议包含欧洲恢复采购俄罗斯天然气，德国明确反对；泽连斯基称乌美最快下周举行新一轮会谈。</h3><div class="src">新浪财经 04:19</div></li><li><h3>美国科技股再遭抛售：纳指大跌2.14%，融资成本走高或掐断AI资本开支，亚洲AI产业链企业盈利风险凸显。</h3><div class="src">新浪财经 08:09</div></li><li><h3>韩国财长看多半导体：李炯日表示半导体繁荣至少持续到2027年，但2029年前后或出现内存"红海"式产能过剩。</h3><div class="src">财联社 08:57</div></li><li><h3>巴基斯坦20名警察遭绑架：俾路支省默斯东地区警员16日晚被不明武装分子带走，当地安全局势明显恶化。</h3><div class="src">新浪财经 06:46</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>霍尔木兹海峡冲突升级：伊朗武装部队开火拦截海峡内"违规"通行船只，中东航运风险骤升，国际油价单日跳涨近4%，布伦特重回110美元附近。<span class="src">新浪财经 06:29</span></h3></li><li><h3>乌克兰和平方案博弈：特朗普政府提议和平协议包含欧洲恢复采购俄罗斯天然气，德国明确反对；泽连斯基称乌美最快下周举行新一轮会谈。<span class="src">新浪财经 04:19</span></h3></li><li><h3>美国科技股再遭抛售：纳指大跌2.14%，融资成本走高或掐断AI资本开支，亚洲AI产业链企业盈利风险凸显。<span class="src">新浪财经 08:09</span></h3></li><li><h3>韩国财长看多半导体：李炯日表示半导体繁荣至少持续到2027年，但2029年前后或出现内存"红海"式产能过剩。<span class="src">财联社 08:57</span></h3></li><li><h3>巴基斯坦20名警察遭绑架：俾路支省默斯东地区警员16日晚被不明武装分子带走，当地安全局势明显恶化。<span class="src">新浪财经 06:46</span></h3></li></ol></div>
 </section>
 <section id="s2">
   <div class="sec-head">
@@ -233,7 +233,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>科技资讯</h2>
     <span class="sec-count">4 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>特斯拉 Roadster 新玩法：马斯克称新款 Roadster 车主可指令车辆自主完成发布会演示的特技动作，得州总部将建环形赛道。</h3><div class="src">IT之家 07:11</div></li><li><h3>马斯克谈美债与AI：称美债问题只能靠AI和机器人解决，同时承认自己在政治事务中"有些偏离正轨"。</h3><div class="src">财联社 08:28</div></li><li><h3>内存"红海"预警：韩财长称半导体繁荣至少延续至2027年，2029年或现供给过剩，存储厂扩产节奏成关键。</h3><div class="src">财联社 08:57</div></li><li><h3>机构调研风向：节后百家机构调研股曝光，源杰科技获284家机构调研居首，光模块与算力链仍是焦点。</h3><div class="src">证券时报 08:12</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>特斯拉 Roadster 新玩法：马斯克称新款 Roadster 车主可指令车辆自主完成发布会演示的特技动作，得州总部将建环形赛道。<span class="src">IT之家 07:11</span></h3></li><li><h3>马斯克谈美债与AI：称美债问题只能靠AI和机器人解决，同时承认自己在政治事务中"有些偏离正轨"。<span class="src">财联社 08:28</span></h3></li><li><h3>内存"红海"预警：韩财长称半导体繁荣至少延续至2027年，2029年或现供给过剩，存储厂扩产节奏成关键。<span class="src">财联社 08:57</span></h3></li><li><h3>机构调研风向：节后百家机构调研股曝光，源杰科技获284家机构调研居首，光模块与算力链仍是焦点。<span class="src">证券时报 08:12</span></h3></li></ol></div>
 </section>
 <section id="s4">
   <div class="sec-head">
@@ -251,7 +251,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>加密资讯</h2>
     <span class="sec-count">3 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>股票代币化繁荣背后：代币化股票规模快速扩张，但收益分配向发行方与做市商倾斜，普通投资者实际回报有限。</h3><div class="src">新浪区块链 10-17</div></li><li><h3>法国成比特币持有者高危区：针对加密持有者的入室抢劫与绑架案频发，法国监管与警方压力上升。</h3><div class="src">新浪区块链 10-17</div></li><li><h3>蚂蚁国际以数字人民币认购基金：蚂蚁国际使用数字人民币认购华夏香港旗下数字货币基金，跨境结算场景再进一步。</h3><div class="src">新浪区块链 10-17</div></li></ol></div>
+  <div class="card"><ol class="news"><li><h3>股票代币化繁荣背后：代币化股票规模快速扩张，但收益分配向发行方与做市商倾斜，普通投资者实际回报有限。<span class="src">新浪区块链 10-17</span></h3></li><li><h3>法国成比特币持有者高危区：针对加密持有者的入室抢劫与绑架案频发，法国监管与警方压力上升。<span class="src">新浪区块链 10-17</span></h3></li><li><h3>蚂蚁国际以数字人民币认购基金：蚂蚁国际使用数字人民币认购华夏香港旗下数字货币基金，跨境结算场景再进一步。<span class="src">新浪区块链 10-17</span></h3></li></ol></div>
 </section>
   <footer>由阿贵自动生成 · 2026年10月18日 星期日<span class="sep">|</span><a href="./">返回今日</a><span class="sep">|</span>数据来源见各条目标注</footer>
 </div>
