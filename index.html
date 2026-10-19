@@ -164,6 +164,20 @@ section{scroll-margin-top:70px}
 .coin-price{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:.2px;font-family:var(--sans);font-variant-numeric:tabular-nums}
 .coin .chg-inline{display:block;margin-top:4px}
 
+/* 走势图 */
+.chart-card{margin-top:12px;padding:16px 18px}
+.chart-title{font-size:11px;font-weight:800;letter-spacing:1.4px;color:var(--muted);text-transform:uppercase;margin-bottom:12px}
+.trend-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:10px}
+.trend{border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;background:linear-gradient(180deg,rgba(11,107,203,.03),rgba(11,107,203,0))}
+.trend-top{display:flex;align-items:baseline;gap:6px}
+.t-name{font-size:11.5px;font-weight:700;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.t-chg{font-size:11px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.t-chg.up{color:var(--up)} .t-chg.down{color:var(--down)}
+.spark{display:block;width:100%;height:44px;margin:6px 0 4px;overflow:visible}
+.trend-bottom{display:flex;justify-content:space-between;gap:6px;font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.t-last{font-weight:800;color:var(--ink-2)}
+.t-range{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
 /* 页脚 */
 footer{margin-top:40px;padding:22px 0 10px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:2;text-align:center;letter-spacing:.2px}
 footer a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}
@@ -186,6 +200,8 @@ footer .sep{margin:0 9px;opacity:.5}
   .news li::before{left:15px;top:19px}
   .data-card{padding:15px 15px}
   .coin-grid{grid-template-columns:repeat(2,1fr)}
+  .trend-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .trend{padding:9px 10px}
   .coin-price{font-size:15px}
   .sec-head h2{font-size:17px}
   .ghost{font-size:56px;top:-20px}
@@ -233,7 +249,138 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>全球股市与商品重点数据</h2>
     
   </div>
-  <div class="card data-card"><div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">道琼斯</span><span class="mkt-val num">52002.41</span><span class="chg down">▼ 0.34%</span></div><div class="mkt-row"><span class="mkt-name">标普500</span><span class="mkt-val num">7659.44</span><span class="chg down">▼ 1.09%</span></div><div class="mkt-row"><span class="mkt-name">纳斯达克</span><span class="mkt-val num">26140.03</span><span class="chg down">▼ 2.14%</span></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">德国DAX</span><span class="mkt-val num">25622.61</span><span class="chg up">▲ 0.95%</span></div><div class="mkt-row"><span class="mkt-name">法国CAC40</span><span class="mkt-val num">7956.70</span><span class="chg up">▲ 0.28%</span></div><div class="mkt-row"><span class="mkt-name">英国富时100</span><span class="mkt-val num">10881.90</span><span class="chg up">▲ 0.38%</span></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-row"><span class="mkt-name">上证指数</span><span class="mkt-val num">3716.28</span><span class="chg up">▲ 0.24%</span></div><div class="mkt-row"><span class="mkt-name">深证成指</span><span class="mkt-val num">11802.46</span><span class="chg down">▼ 0.12%</span></div><div class="mkt-row"><span class="mkt-name">创业板指</span><span class="mkt-val num">2772.38</span><span class="chg down">▼ 0.39%</span></div><div class="mkt-row"><span class="mkt-name">恒生指数</span><span class="mkt-val num">24186.83</span><span class="chg up">▲ 0.52%</span></div><div class="mkt-row"><span class="mkt-name">日经225</span><span class="mkt-val num">65324.07</span><span class="chg up">▲ 1.39%</span></div><div class="mkt-row"><span class="mkt-name">韩国KOSPI</span><span class="mkt-val num">5668.05</span><span class="chg up">▲ 2.05%</span></div></div></div><div class="card data-card"><div class="mkt-group"><div class="mkt-row"><span class="mkt-name">伦敦金(现货黄金)</span><span class="mkt-val num">4184.76 美元/盎司</span><span class="chg up">▲ 0.50%</span></div><div class="mkt-row"><span class="mkt-name">上海金Au99.99</span><span class="mkt-val num">855.40 元/克</span><span class="chg up">▲ 0.97%</span></div><div class="mkt-row"><span class="mkt-name">WTI原油</span><span class="mkt-val num">97.63 美元/桶</span><span class="chg down">▼ 1.41%</span></div><div class="mkt-row"><span class="mkt-name">布伦特原油</span><span class="mkt-val num">108.05 美元/桶</span><span class="chg down">▼ 1.65%</span></div></div></div><div class="note">首饰黄金：首饰金均价 1248.1 元/克；足金回收价 891 元/克（金投网，仅供参考）</div>
+  <div class="card data-card"><div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">道琼斯</span><span class="mkt-val num">52002.41</span><span class="chg down">▼ 0.34%</span></div><div class="mkt-row"><span class="mkt-name">标普500</span><span class="mkt-val num">7659.44</span><span class="chg down">▼ 1.09%</span></div><div class="mkt-row"><span class="mkt-name">纳斯达克</span><span class="mkt-val num">26140.03</span><span class="chg down">▼ 2.14%</span></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">德国DAX</span><span class="mkt-val num">25622.61</span><span class="chg up">▲ 0.95%</span></div><div class="mkt-row"><span class="mkt-name">法国CAC40</span><span class="mkt-val num">7956.70</span><span class="chg up">▲ 0.28%</span></div><div class="mkt-row"><span class="mkt-name">英国富时100</span><span class="mkt-val num">10881.90</span><span class="chg up">▲ 0.38%</span></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-row"><span class="mkt-name">上证指数</span><span class="mkt-val num">3716.28</span><span class="chg up">▲ 0.24%</span></div><div class="mkt-row"><span class="mkt-name">深证成指</span><span class="mkt-val num">11802.46</span><span class="chg down">▼ 0.12%</span></div><div class="mkt-row"><span class="mkt-name">创业板指</span><span class="mkt-val num">2772.38</span><span class="chg down">▼ 0.39%</span></div><div class="mkt-row"><span class="mkt-name">恒生指数</span><span class="mkt-val num">24186.83</span><span class="chg up">▲ 0.52%</span></div><div class="mkt-row"><span class="mkt-name">日经225</span><span class="mkt-val num">65324.07</span><span class="chg up">▲ 1.39%</span></div><div class="mkt-row"><span class="mkt-name">韩国KOSPI</span><span class="mkt-val num">5668.05</span><span class="chg up">▲ 2.05%</span></div></div></div><div class="card data-card"><div class="mkt-group"><div class="mkt-row"><span class="mkt-name">伦敦金(现货黄金)</span><span class="mkt-val num">4184.76 美元/盎司</span><span class="chg up">▲ 0.50%</span></div><div class="mkt-row"><span class="mkt-name">上海金Au99.99</span><span class="mkt-val num">855.40 元/克</span><span class="chg up">▲ 0.97%</span></div><div class="mkt-row"><span class="mkt-name">WTI原油</span><span class="mkt-val num">97.63 美元/桶</span><span class="chg down">▼ 1.41%</span></div><div class="mkt-row"><span class="mkt-name">布伦特原油</span><span class="mkt-val num">108.05 美元/桶</span><span class="chg down">▼ 1.65%</span></div></div></div><div class="note">首饰黄金：首饰金均价 1248.1 元/克；足金回收价 891 元/克（金投网，仅供参考）</div><div class="card chart-card"><div class="chart-title">近 15 个交易日走势 · Trend</div><div class="trend-grid"><div class="trend">
+  <div class="trend-top"><span class="t-name">上证指数</span><span class="t-chg down">-5.54%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g2a9128o" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.3 L11.4,6.0 L22.9,8.2 L34.3,14.9 L45.7,23.9 L57.1,22.9 L68.6,21.3 L80.0,25.5 L91.4,25.2 L102.9,27.5 L114.3,27.0 L125.7,31.7 L137.1,40.0 L148.6,38.8 L160.0,36.7 L160,46 L0,46 Z" fill="url(#g2a9128o)"/>
+<path d="M0.0,6.3 L11.4,6.0 L22.9,8.2 L34.3,14.9 L45.7,23.9 L57.1,22.9 L68.6,21.3 L80.0,25.5 L91.4,25.2 L102.9,27.5 L114.3,27.0 L125.7,31.7 L137.1,40.0 L148.6,38.8 L160.0,36.7" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="36.7" r="2.2" fill="#1c8a5a"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">3,730.92</span><span class="t-range">09-21 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">深证成指</span><span class="t-chg down">-13.93%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g3zuefip" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L11.4,6.1 L22.9,7.7 L34.3,13.3 L45.7,21.4 L57.1,20.6 L68.6,20.9 L80.0,25.6 L91.4,25.2 L102.9,29.7 L114.3,30.3 L125.7,34.6 L137.1,39.7 L148.6,40.0 L160.0,39.7 L160,46 L0,46 Z" fill="url(#g3zuefip)"/>
+<path d="M0.0,6.0 L11.4,6.1 L22.9,7.7 L34.3,13.3 L45.7,21.4 L57.1,20.6 L68.6,20.9 L80.0,25.6 L91.4,25.2 L102.9,29.7 L114.3,30.3 L125.7,34.6 L137.1,39.7 L148.6,40.0 L160.0,39.7" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="39.7" r="2.2" fill="#1c8a5a"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">11,817.42</span><span class="t-range">09-21 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">创业板指</span><span class="t-chg down">-19.22%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gjnshaye" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L11.4,6.0 L22.9,7.1 L34.3,11.8 L45.7,19.5 L57.1,19.4 L68.6,19.8 L80.0,24.9 L91.4,24.5 L102.9,28.7 L114.3,29.0 L125.7,33.7 L137.1,38.1 L148.6,38.6 L160.0,40.0 L160,46 L0,46 Z" fill="url(#gjnshaye)"/>
+<path d="M0.0,6.0 L11.4,6.0 L22.9,7.1 L34.3,11.8 L45.7,19.5 L57.1,19.4 L68.6,19.8 L80.0,24.9 L91.4,24.5 L102.9,28.7 L114.3,29.0 L125.7,33.7 L137.1,38.1 L148.6,38.6 L160.0,40.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="40.0" r="2.2" fill="#1c8a5a"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">2,746.29</span><span class="t-range">09-21 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">恒生指数</span><span class="t-chg down">-1.32%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g66tdfy3" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,11.3 L11.4,6.0 L22.9,10.7 L34.3,7.2 L45.7,32.6 L57.1,29.9 L68.6,20.4 L80.0,26.3 L91.4,40.0 L102.9,23.1 L114.3,20.7 L125.7,17.8 L137.1,19.0 L148.6,29.0 L160.0,24.1 L160,46 L0,46 Z" fill="url(#g66tdfy3)"/>
+<path d="M0.0,11.3 L11.4,6.0 L22.9,10.7 L34.3,7.2 L45.7,32.6 L57.1,29.9 L68.6,20.4 L80.0,26.3 L91.4,40.0 L102.9,23.1 L114.3,20.7 L125.7,17.8 L137.1,19.0 L148.6,29.0 L160.0,24.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="24.1" r="2.2" fill="#1c8a5a"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">24,186.83</span><span class="t-range">09-25 — 10-16</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">道琼斯</span><span class="t-chg up">+1.24%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gvz7y84p" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,28.1 L11.4,40.0 L22.9,39.5 L34.3,32.8 L45.7,30.3 L57.1,23.6 L68.6,32.7 L80.0,31.3 L91.4,20.0 L102.9,14.7 L114.3,19.6 L125.7,20.9 L137.1,6.0 L148.6,10.7 L160.0,11.2 L160,46 L0,46 Z" fill="url(#gvz7y84p)"/>
+<path d="M0.0,28.1 L11.4,40.0 L22.9,39.5 L34.3,32.8 L45.7,30.3 L57.1,23.6 L68.6,32.7 L80.0,31.3 L91.4,20.0 L102.9,14.7 L114.3,19.6 L125.7,20.9 L137.1,6.0 L148.6,10.7 L160.0,11.2" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="11.2" r="2.2" fill="#cf3b34"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">51,984.22</span><span class="t-range">09-29 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">标普500</span><span class="t-chg up">+0.41%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gs8zyzdb" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,36.1 L11.4,40.0 L22.9,37.0 L34.3,25.5 L45.7,15.1 L57.1,6.0 L68.6,9.5 L80.0,16.9 L91.4,7.5 L102.9,8.4 L114.3,8.7 L125.7,26.3 L137.1,21.2 L148.6,38.4 L160.0,29.6 L160,46 L0,46 Z" fill="url(#gs8zyzdb)"/>
+<path d="M0.0,36.1 L11.4,40.0 L22.9,37.0 L34.3,25.5 L45.7,15.1 L57.1,6.0 L68.6,9.5 L80.0,16.9 L91.4,7.5 L102.9,8.4 L114.3,8.7 L125.7,26.3 L137.1,21.2 L148.6,38.4 L160.0,29.6" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="29.6" r="2.2" fill="#cf3b34"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">7,702.53</span><span class="t-range">09-29 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">纳斯达克</span><span class="t-chg down">-1.42%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gqdp1ich" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,24.7 L11.4,23.2 L22.9,23.0 L34.3,15.5 L45.7,8.9 L57.1,6.0 L68.6,7.4 L80.0,15.5 L91.4,11.4 L102.9,14.2 L114.3,15.2 L125.7,27.1 L137.1,26.7 L148.6,40.0 L160.0,33.6 L160,46 L0,46 Z" fill="url(#gqdp1ich)"/>
+<path d="M0.0,24.7 L11.4,23.2 L22.9,23.0 L34.3,15.5 L45.7,8.9 L57.1,6.0 L68.6,7.4 L80.0,15.5 L91.4,11.4 L102.9,14.2 L114.3,15.2 L125.7,27.1 L137.1,26.7 L148.6,40.0 L160.0,33.6" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="33.6" r="2.2" fill="#1c8a5a"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">26,416.04</span><span class="t-range">09-29 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">上海金</span><span class="t-chg down">-4.26%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="geuopdxo" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L11.4,11.3 L22.9,8.4 L34.3,16.5 L45.7,32.9 L57.1,36.5 L68.6,28.0 L80.0,39.9 L91.4,29.2 L102.9,31.6 L114.3,30.6 L125.7,37.8 L137.1,40.0 L148.6,33.9 L160.0,34.2 L160,46 L0,46 Z" fill="url(#geuopdxo)"/>
+<path d="M0.0,6.0 L11.4,11.3 L22.9,8.4 L34.3,16.5 L45.7,32.9 L57.1,36.5 L68.6,28.0 L80.0,39.9 L91.4,29.2 L102.9,31.6 L114.3,30.6 L125.7,37.8 L137.1,40.0 L148.6,33.9 L160.0,34.2" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="34.2" r="2.2" fill="#1c8a5a"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">8.55</span><span class="t-range">09-21 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">伦敦金</span><span class="t-chg down">-0.48%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gg36c4fu" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,10.8 L11.4,20.3 L22.9,12.5 L34.3,27.0 L45.7,26.6 L57.1,17.7 L68.6,37.9 L80.0,29.2 L91.4,6.0 L102.9,14.7 L114.3,18.7 L125.7,40.0 L137.1,15.1 L148.6,17.6 L160.0,18.5 L160,46 L0,46 Z" fill="url(#gg36c4fu)"/>
+<path d="M0.0,10.8 L11.4,20.3 L22.9,12.5 L34.3,27.0 L45.7,26.6 L57.1,17.7 L68.6,37.9 L80.0,29.2 L91.4,6.0 L102.9,14.7 L114.3,18.7 L125.7,40.0 L137.1,15.1 L148.6,17.6 L160.0,18.5" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="18.5" r="2.2" fill="#1c8a5a"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">4,161.67</span><span class="t-range">09-29 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">WTI原油</span><span class="t-chg up">+9.36%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gbg8ju5h" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,40.0 L11.4,35.2 L22.9,26.6 L34.3,32.2 L45.7,38.8 L57.1,36.7 L68.6,40.0 L80.0,32.4 L91.4,30.9 L102.9,25.7 L114.3,20.3 L125.7,19.0 L137.1,11.0 L148.6,6.0 L160.0,12.0 L160,46 L0,46 Z" fill="url(#gbg8ju5h)"/>
+<path d="M0.0,40.0 L11.4,35.2 L22.9,26.6 L34.3,32.2 L45.7,38.8 L57.1,36.7 L68.6,40.0 L80.0,32.4 L91.4,30.9 L102.9,25.7 L114.3,20.3 L125.7,19.0 L137.1,11.0 L148.6,6.0 L160.0,12.0" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="12.0" r="2.2" fill="#cf3b34"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">97.25</span><span class="t-range">09-29 — 10-19</span></div>
+</div>
+<div class="trend">
+  <div class="trend-top"><span class="t-name">布伦特原油</span><span class="t-chg up">+12.57%</span></div>
+  <svg viewBox="0 0 160 46" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gzoic6eh" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,40.0 L11.4,34.7 L22.9,22.1 L34.3,23.1 L45.7,28.9 L57.1,27.0 L68.6,26.8 L80.0,19.6 L91.4,18.7 L102.9,14.6 L114.3,14.4 L125.7,14.6 L137.1,15.7 L148.6,6.0 L160.0,10.7 L160,46 L0,46 Z" fill="url(#gzoic6eh)"/>
+<path d="M0.0,40.0 L11.4,34.7 L22.9,22.1 L34.3,23.1 L45.7,28.9 L57.1,27.0 L68.6,26.8 L80.0,19.6 L91.4,18.7 L102.9,14.6 L114.3,14.4 L125.7,14.6 L137.1,15.7 L148.6,6.0 L160.0,10.7" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="10.7" r="2.2" fill="#cf3b34"/>
+</svg>
+  <div class="trend-bottom"><span class="t-last">107.72</span><span class="t-range">09-29 — 10-19</span></div>
+</div></div></div>
 </section>
 <section id="s3">
   <div class="sec-head">
