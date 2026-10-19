@@ -55,7 +55,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font
   -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 78%);
   mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 78%);
 }
-.masthead::after{content:"10.17";position:absolute;right:-4px;bottom:-30px;font:700 118px/1 var(--serif);letter-spacing:-5px;color:rgba(255,255,255,.055);pointer-events:none}
+.masthead::after{content:"10.17";position:absolute;right:-4px;bottom:-30px;font-family:var(--sans);font-weight:800;font-size:112px;line-height:1;letter-spacing:-5px;color:rgba(255,255,255,.05);pointer-events:none}
 .masthead .wrap{position:relative;z-index:1;display:flex;flex-direction:column;gap:12px}
 .brandmark{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 .brandmark h1{margin:0;font-size:34px;line-height:1.15;font-weight:800;letter-spacing:3px}
@@ -80,7 +80,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font
 .hero>div{padding:16px 18px;border-left:1px solid var(--line-2);min-width:0}
 .hero>div:first-child{border-left:0}
 .hero .k{display:block;font-size:10.5px;color:var(--muted);font-weight:700;letter-spacing:.8px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.hero .v{display:block;margin-top:5px;font:800 19px/1.3 var(--serif),var(--sans);letter-spacing:.2px}
+.hero .v{display:block;margin-top:5px;font-family:var(--sans);font-weight:800;font-size:20px;line-height:1.3;letter-spacing:.2px;font-variant-numeric:tabular-nums}
 .hero .v em{display:block;font:600 12px/1.4 var(--sans);font-style:normal;margin-top:2px}
 .hero .v em.up{color:var(--up)} .hero .v em.down{color:var(--down)} .hero .v em.flat{color:var(--flat)}
 
@@ -101,7 +101,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font
 section{scroll-margin-top:70px}
 .sec-head{position:relative;display:flex;align-items:center;gap:11px;margin:38px 0 16px;padding-bottom:11px;border-bottom:1px solid var(--line)}
 .sec-head::after{content:"";position:absolute;left:0;bottom:-1px;width:58px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
-.ghost{position:absolute;right:-6px;top:-26px;font:800 68px/1 var(--serif);letter-spacing:-3px;color:rgba(15,27,45,.045);pointer-events:none;user-select:none}
+.ghost{position:absolute;right:-6px;top:-26px;font-family:var(--sans);font-weight:800;font-size:64px;line-height:1;letter-spacing:-3px;color:rgba(15,27,45,.045);pointer-events:none;user-select:none}
 @media (prefers-color-scheme: dark){.ghost{color:rgba(255,255,255,.045)}}
 .sec-no{flex:none;width:27px;height:27px;border-radius:9px;background:var(--navy);color:#fff;font-size:11.5px;font-weight:800;display:grid;place-items:center;letter-spacing:.5px;box-shadow:0 4px 12px rgba(10,31,56,.22)}
 .sec-head h2{margin:0;font-size:18.5px;font-weight:800;letter-spacing:.8px}
@@ -115,13 +115,13 @@ section{scroll-margin-top:70px}
 
 /* 新闻 */
 .news{list-style:none;margin:0;padding:0;counter-reset:n}
-.news li{counter-increment:n;position:relative;padding:17px 20px 17px 52px;border-bottom:1px solid var(--line-2);transition:background .2s}
-.news li:last-child{border-bottom:0}
+.news li{counter-increment:n;position:relative;padding:22px 20px 22px 52px;border-bottom:1px solid var(--line);transition:background .2s}
+.news li:last-child{border-bottom:0;padding-bottom:6px}
 .news li:hover{background:rgba(11,107,203,.025)}
-.news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:16px;font:700 14px/1 var(--serif);color:var(--gold);letter-spacing:.6px}
-.news h3{margin:0 0 4px;font-size:15.8px;font-weight:800;line-height:1.62;letter-spacing:.2px}
-.news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.75}
-.src{font-size:11.5px;color:var(--muted);margin-top:4px;letter-spacing:.3px}
+.news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
+.news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
+.news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
+.src{font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:.3px}
 
 /* 行情 */
 .mkt-group+.mkt-group{margin-top:16px}
@@ -130,7 +130,7 @@ section{scroll-margin-top:70px}
 .mkt-row{display:flex;align-items:center;gap:10px;padding:9.5px 2px;border-bottom:1px dashed var(--line-2)}
 .mkt-row:last-child{border-bottom:0}
 .mkt-name{flex:1;font-size:14px;font-weight:600;color:var(--ink)}
-.mkt-val{font-size:15.5px;font-weight:800;letter-spacing:.3px;font-family:var(--serif),var(--sans)}
+.mkt-val{font-size:16px;font-weight:800;letter-spacing:.2px;font-family:var(--sans);font-variant-numeric:tabular-nums}
 .chg{flex:none;min-width:82px;text-align:right;font-size:13px;font-weight:800;padding:3px 10px;border-radius:8px;font-variant-numeric:tabular-nums;letter-spacing:.2px}
 .chg.up{color:var(--up);background:rgba(207,59,52,.08)}
 .chg.down{color:var(--down);background:rgba(28,138,90,.09)}
@@ -150,7 +150,7 @@ section{scroll-margin-top:70px}
 .coin{background:linear-gradient(180deg,rgba(11,107,203,.035),rgba(11,107,203,0));border:1px solid var(--line-2);border-radius:13px;padding:13px 15px;transition:transform .18s,box-shadow .18s,border-color .18s}
 .coin:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--line)}
 .coin-name{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.4px;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.coin-price{font-size:17px;font-weight:800;color:var(--ink);letter-spacing:.2px;font-family:var(--serif),var(--sans)}
+.coin-price{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:.2px;font-family:var(--sans);font-variant-numeric:tabular-nums}
 .coin .chg-inline{display:block;margin-top:4px}
 
 /* 页脚 */
