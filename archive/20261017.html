@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2b46">
+<title>全球早报 · 2026年10月17日 星期六</title>
+<meta name="description" content="全球早报：要闻、行情、科技与加密市场速览。2026年10月17日 星期六">
+<meta property="og:title" content="全球早报 · 2026年10月17日 星期六">
+<meta property="og:description" content="要闻 · 行情 · 科技 · 加密">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%B0%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f4f6f8; --card:#ffffff; --ink:#16202b; --ink-2:#3c4a5a; --muted:#77869a;
+  --line:#e4e9ef; --line-soft:#eef2f6;
+  --navy:#0f2b46; --gold:#b8912f; --up:#c0392b; --down:#1e8449;
+  --radius:16px; --shadow:0 1px 2px rgba(16,32,48,.04), 0 10px 30px rgba(16,32,48,.07);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0d1218; --card:#151d26; --ink:#e9eff6; --ink-2:#c3cfdc; --muted:#8b9aab;
+    --line:#233040; --line-soft:#1b2531;
+    --navy:#9dc0e2; --gold:#d9b45a; --up:#ff6f61; --down:#4ad295;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 14px 34px rgba(0,0,0,.4);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:16px; line-height:1.75; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--navy); text-decoration:none}
+.wrap{max-width:780px; margin:0 auto; padding:20px 16px 64px}
+
+/* 顶部 */
+.masthead{
+  background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:28px 26px 22px; position:relative; overflow:hidden; margin-bottom:18px;
+  border-top:3px solid var(--gold);
+}
+.masthead .eyebrow{font-size:10.5px; letter-spacing:3.2px; color:var(--muted); text-transform:uppercase; font-weight:600}
+.masthead h1{margin:8px 0 6px; font-size:32px; line-height:1.15; letter-spacing:1px; color:var(--ink); font-weight:800}
+.masthead .date{font-size:14px; color:var(--ink-2); letter-spacing:.4px}
+.masthead .rule{height:1px; background:linear-gradient(90deg,var(--gold),transparent 70%); margin:16px 0 10px}
+.masthead .sub{font-size:12px; color:var(--muted); display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+
+/* 区块 */
+.sec{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px 24px 24px; margin-bottom:16px}
+.sec-title{display:flex; align-items:center; gap:10px; margin:0 0 16px; font-size:16.5px; font-weight:700; color:var(--ink); line-height:1.35}
+.sec-num{flex:0 0 auto; width:26px; height:26px; border-radius:8px; background:var(--navy); color:#fff; font-size:13px; display:flex; align-items:center; justify-content:center; font-weight:700}
+@media (prefers-color-scheme: dark){ .sec-num{color:#0d1218} }
+
+/* 新闻条目 */
+.item{padding:14px 0; border-top:1px solid var(--line-soft)}
+.item:first-of-type{border-top:none; padding-top:0}
+.item h3{margin:0 0 5px; font-size:16.5px; line-height:1.5; font-weight:700; color:var(--ink)}
+.item p{margin:0; font-size:14.5px; line-height:1.8; color:var(--ink-2)}
+.meta{display:inline-block; margin-left:8px; font-size:11.5px; font-weight:400; color:var(--muted); white-space:nowrap}
+
+/* 列表 */
+.bullets{list-style:none; margin:0; padding:0}
+.bullets li{display:flex; gap:10px; padding:9px 0; font-size:14.5px; color:var(--ink-2); line-height:1.75; border-top:1px solid var(--line-soft)}
+.bullets li:first-child{border-top:none; padding-top:0}
+.dot{flex:0 0 auto; width:6px; height:6px; border-radius:50%; background:var(--gold); margin-top:9px}
+
+/* 表格 */
+.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:2px -4px 4px}
+table.data{width:100%; border-collapse:collapse; font-size:14px}
+table.data th{
+  text-align:left; font-size:11.5px; font-weight:600; letter-spacing:.6px; color:var(--muted);
+  text-transform:uppercase; padding:8px 10px; border-bottom:1px solid var(--line); white-space:nowrap;
+}
+table.data td{padding:9px 10px; border-bottom:1px solid var(--line-soft); color:var(--ink-2)}
+table.data tr:last-child td{border-bottom:none}
+table.data td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+table.data tbody tr:hover td{background:var(--line-soft)}
+.up{color:var(--up); font-weight:600}
+.down{color:var(--down); font-weight:600}
+
+/* 加密卡片 */
+.coin-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px}
+.coin{background:var(--bg); border:1px solid var(--line-soft); border-radius:12px; padding:12px 14px}
+.coin-name{font-size:12px; color:var(--muted); margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.coin-price{font-size:17px; font-weight:700; color:var(--ink); font-variant-numeric:tabular-nums; letter-spacing:.2px}
+.coin-chg{font-size:12.5px; margin-top:3px}
+
+/* 段落 */
+.para{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px 22px; margin:0 0 16px; font-size:14px; color:var(--ink-2); line-height:1.8}
+
+/* 页脚 */
+footer{margin-top:26px; padding:0 6px; font-size:12px; color:var(--muted); text-align:center; line-height:2}
+footer a{color:var(--muted); border-bottom:1px dotted var(--line)}
+footer .sep{margin:0 8px; opacity:.5}
+
+/* 打印 */
+@media print{
+  body{background:#fff}
+  .wrap{max-width:none; padding:0}
+  .masthead,.sec,.para{box-shadow:none; border:1px solid #ddd}
+  .coin{background:#fff}
+}
+
+/* 小屏微调 */
+@media (max-width:480px){
+  .wrap{padding:14px 12px 52px}
+  .masthead{padding:22px 18px 18px; border-radius:14px}
+  .masthead h1{font-size:26px}
+  .sec{padding:18px 16px 20px; border-radius:14px}
+  .item h3{font-size:15.5px}
+  .item p{font-size:14px}
+  .coin-grid{grid-template-columns:repeat(2,1fr); gap:8px}
+  .coin{padding:10px 11px}
+  .coin-price{font-size:15px}
+  table.data{font-size:13px}
+  table.data th,table.data td{padding:7px 8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="eyebrow">Global Morning Briefing</div>
+    <h1>全球早报</h1>
+    <div class="date">2026年10月17日 星期六</div>
+    <div class="rule"></div>
+    <div class="sub"><span>要闻 · 行情 · 科技 · 加密</span><span>更新于 07:00</span></div>
+  </header>
+<section class="sec">
+  <h2 class="sec-title"><span class="sec-num">一</span><span>全球要闻 · TOP5</span></h2>
+<article class="item">
+  <h3>美股三大指数收跌，纳指跌超2%。（新浪财经 06:54）科技股全线走低，CoreWeave重挫近12%；布伦特原油自5月以来首次触及110美元/桶，通胀担忧重燃。</h3>
+  
+</article>
+<article class="item">
+  <h3>标普500创6月以来最差单周表现，AI担忧重创芯片股。（新浪财经 05:31）做空半导体者7天账面获利约320亿美元。</h3>
+  
+</article>
+<article class="item">
+  <h3>霍尔木兹海峡商船遇袭频次上升，美以密商打击伊朗预案。（新浪财经 05:56）伊朗称又一艘违规油轮在海峡东部起火，油价被持续推高。</h3>
+  
+</article>
+<article class="item">
+  <h3>俄乌无视特朗普促和努力继续互击。（新浪财经 06:28）普京称须持续大规模打击乌军工与物流枢纽，泽连斯基下令再袭俄炼油厂；特朗普否认关停乌卫星系统。</h3>
+  
+</article>
+<article class="item">
+  <h3>美国2026财年联邦预算赤字达1.99万亿美元。（新浪财经 05:25）净利息支出创纪录，政府借款需求庞大，债务负担或升向纪录高位。</h3>
+  
+</article>
+</section><section class="sec">
+  <h2 class="sec-title"><span class="sec-num">二</span><span>全球股市与商品重点数据</span></h2>
+<div class="table-wrap"><table class="data"><thead><tr><th>标的</th><th>点位</th><th>涨跌幅</th></tr></thead><tbody><tr><td>上证指数</td><td class="num">3716.28</td><td class="num"><span class="up">▲0.24%</span></td></tr><tr><td>深证成指</td><td class="num">11802.46</td><td class="num"><span class="down">▼0.12%</span></td></tr><tr><td>创业板指</td><td class="num">2772.38</td><td class="num"><span class="down">▼0.39%</span></td></tr><tr><td>恒生指数</td><td class="num">24186.83</td><td class="num"><span class="up">▲0.52%</span></td></tr><tr><td>道琼斯</td><td class="num">52002.41</td><td class="num"><span class="down">▼0.34%</span></td></tr><tr><td>标普500</td><td class="num">7659.44</td><td class="num"><span class="down">▼1.09%</span></td></tr><tr><td>纳斯达克</td><td class="num">26140.03</td><td class="num"><span class="down">▼2.14%</span></td></tr><tr><td>日经225</td><td class="num">65324.07</td><td class="num"><span class="up">▲1.39%</span></td></tr><tr><td>韩国KOSPI</td><td class="num">5668.05</td><td class="num"><span class="up">▲2.05%</span></td></tr><tr><td>德国DAX</td><td class="num">25622.61</td><td class="num"><span class="up">▲0.95%</span></td></tr><tr><td>法国CAC40</td><td class="num">7956.70</td><td class="num"><span class="up">▲0.28%</span></td></tr><tr><td>英国富时100</td><td class="num">10881.90</td><td class="num"><span class="up">▲0.38%</span></td></tr><tr><td>伦敦金(现货黄金)</td><td class="num">4164.05 美元/盎司</td><td class="num"><span class="down">▼0.16%</span></td></tr><tr><td>上海金Au99.99</td><td class="num">855.40 元/克</td><td class="num"><span class="up">▲0.97%</span></td></tr><tr><td>WTI原油</td><td class="num">101.85 美元/桶</td><td class="num"><span class="up">▲3.96%</span></td></tr><tr><td>布伦特原油</td><td class="num">109.93 美元/桶</td><td class="num"><span class="up">▲3.78%</span></td></tr></tbody></table></div>
+<p class="para">首饰黄金（金投网，仅供参考）：首饰金均价 1247.3 元/克（10家主流金店足金挂牌均价）；足金回收价 885 元/克。</p>
+<p class="para">（行情来源：腾讯行情/新浪财经，上海金Au99.99为518880折算；时间 2026-10-17 07:00）</p>
+</section><section class="sec">
+  <h2 class="sec-title"><span class="sec-num">三</span><span>科技资讯</span></h2>
+<ul class="bullets"><li><span class="dot"></span><span>Anthropic推介前沿AI安全监管法案草案，拟允许在造成10亿美元损失或50人死伤时封锁模型。<span class="meta">新浪财经 06:14</span></span></li><li><span class="dot"></span><span>AWS首席财务官称AI基建投入热潮具备可持续性，投资回报周期不足三年。<span class="meta">新浪财经 05:28</span></span></li><li><span class="dot"></span><span>芯片股遭历史性暴跌，一年来最强板块重创多头，做空者七日获利约320亿美元。<span class="meta">新浪财经 06:05</span></span></li><li><span class="dot"></span><span>黄仁勋谈AI市场震荡：「这一切都会过去」，技术红利将化解投资者担忧。<span class="meta">新浪财经 05:27</span></span></li></ul>
+</section><section class="sec">
+  <h2 class="sec-title"><span class="sec-num">四</span><span>加密货币行情</span></h2>
+<div class="coin-grid">
+<div class="coin">
+  <div class="coin-name">比特币 BTC</div>
+  <div class="coin-price">$81,781.18</div>
+  <div class="coin-chg"><span class="down">▼0.82%</span></div>
+</div>
+<div class="coin">
+  <div class="coin-name">以太坊 ETH</div>
+  <div class="coin-price">$2,425.43</div>
+  <div class="coin-chg"><span class="down">▼1.25%</span></div>
+</div>
+<div class="coin">
+  <div class="coin-name">Solana SOL</div>
+  <div class="coin-price">$104.43</div>
+  <div class="coin-chg"><span class="down">▼1.32%</span></div>
+</div>
+<div class="coin">
+  <div class="coin-name">BNB</div>
+  <div class="coin-price">$722.64</div>
+  <div class="coin-chg"><span class="down">▼0.97%</span></div>
+</div>
+<div class="coin">
+  <div class="coin-name">瑞波 XRP</div>
+  <div class="coin-price">$1.31</div>
+  <div class="coin-chg"><span class="down">▼2.19%</span></div>
+</div>
+<div class="coin">
+  <div class="coin-name">狗狗币 DOGE</div>
+  <div class="coin-price">$0.0810</div>
+  <div class="coin-chg"><span class="down">▼0.56%</span></div>
+</div>
+<div class="coin">
+  <div class="coin-name">艾达 ADA</div>
+  <div class="coin-price">$0.2260</div>
+  <div class="coin-chg"><span class="down">▼2.00%</span></div>
+</div>
+<div class="coin">
+  <div class="coin-name">波场 TRX</div>
+  <div class="coin-price">$0.3354</div>
+  <div class="coin-chg"><span class="up">▲0.90%</span></div>
+</div>
+</div>
+<p class="para">（来源：Binance 公共行情 API，24h现货，2026-10-17 07:00）</p>
+</section><section class="sec">
+  <h2 class="sec-title"><span class="sec-num">五</span><span>加密资讯</span></h2>
+<ul class="bullets"><li><span class="dot"></span><span>渣打银行上线加密交易，传统银行财富业务正式接入 BTC、ETH。<span class="meta">新浪区块链 2026-10-16</span></span></li><li><span class="dot"></span><span>Avenir Group 孵化的 UMX 正式上线，支持港美股与加密资产交易。<span class="meta">新浪区块链 2026-10-16</span></span></li><li><span class="dot"></span><span>Solana 点亮上海外滩大屏，被视为一次大胆的合规考验。<span class="meta">新浪区块链 2026-10-16</span></span></li></ul>
+<p class="para">📬 收到请回复「好的」,保持消息通道畅通～</p></section>
+  <footer>
+    由阿贵自动生成 · 2026年10月17日 星期六<span class="sep">|</span><a href="./">返回今日</a><span class="sep">|</span>数据来源见各条目标注
+  </footer>
+</div>
+</body>
+</html>
