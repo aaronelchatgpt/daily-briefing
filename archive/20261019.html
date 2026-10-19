@@ -143,6 +143,15 @@ section{scroll-margin-top:70px}
 .mkt-name{flex:1;font-size:14px;font-weight:600;color:var(--ink);min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .mkt-spark{flex:0 0 64px;height:22px;display:block}
 .mkt-spark .spark{width:100%;height:22px;margin:0}
+.mkt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.mkt-card{border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;background:linear-gradient(180deg,rgba(11,107,203,.03),rgba(11,107,203,0))}
+.mc-top{display:flex;align-items:baseline;gap:6px}
+.mc-name{flex:1;font-size:12px;font-weight:700;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mc-chg{font-size:11px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.mc-chg.up{color:var(--up)} .mc-chg.down{color:var(--down)}
+.mc-value{font-size:16px;font-weight:800;margin-top:2px;letter-spacing:.2px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mc-spark{height:26px;margin-top:4px}
+.mc-spark .spark{width:100%;height:26px;margin:0}
 .mkt-val{font-size:16px;font-weight:800;letter-spacing:.2px;font-family:var(--sans);font-variant-numeric:tabular-nums}
 .chg{flex:none;min-width:82px;text-align:right;font-size:13px;font-weight:800;padding:3px 10px;border-radius:8px;font-variant-numeric:tabular-nums;letter-spacing:.2px}
 .chg.up{color:var(--up);background:rgba(207,59,52,.08)}
@@ -204,6 +213,9 @@ footer .sep{margin:0 9px;opacity:.5}
   .data-card{padding:15px 15px}
   .coin-grid{grid-template-columns:repeat(2,1fr)}
   .trend-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .mkt-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .mkt-card{padding:9px 10px}
+  .mc-value{font-size:15px}
   .trend{padding:9px 10px}
   .coin-price{font-size:15px}
   .sec-head h2{font-size:17px}
@@ -252,84 +264,84 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>全球股市与商品重点数据</h2>
     
   </div>
-  <div class="card data-card"><div class="tbl-block"><div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">道琼斯</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="gv6rldji" x1="0" y1="0" x2="0" y2="1">
+  <div class="card data-card"><div class="tbl-block"><div class="mkt-group"><div class="mkt-title">美股<span>3 项</span></div><div class="mkt-grid"><div class="mkt-card"><div class="mc-top"><span class="mc-name">道琼斯</span><span class="mc-chg down">▼ 0.34%</span></div><div class="mc-value num">52002.41</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gx9olfui" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,12.5 L4.6,16.0 L9.1,15.8 L13.7,13.9 L18.3,13.2 L22.9,11.2 L27.4,13.8 L32.0,13.4 L36.6,10.1 L41.1,8.6 L45.7,10.0 L50.3,10.4 L54.9,6.0 L59.4,7.4 L64.0,7.5 L64,22 L0,22 Z" fill="url(#gv6rldji)"/>
-<path d="M0.0,12.5 L4.6,16.0 L9.1,15.8 L13.7,13.9 L18.3,13.2 L22.9,11.2 L27.4,13.8 L32.0,13.4 L36.6,10.1 L41.1,8.6 L45.7,10.0 L50.3,10.4 L54.9,6.0 L59.4,7.4 L64.0,7.5" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="7.5" r="2.2" fill="#cf3b34"/>
-</svg></span><span class="mkt-val num">52002.41</span><span class="chg down">▼ 0.34%</span></div><div class="mkt-row"><span class="mkt-name">标普500</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="g4gld4le" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,15.1 L11.4,20.0 L22.9,19.8 L34.3,17.0 L45.7,16.0 L57.1,13.2 L68.6,17.0 L80.0,16.4 L91.4,11.8 L102.9,9.6 L114.3,11.6 L125.7,12.1 L137.1,6.0 L148.6,7.9 L160.0,8.1 L160,26 L0,26 Z" fill="url(#gx9olfui)"/>
+<path d="M0.0,15.1 L11.4,20.0 L22.9,19.8 L34.3,17.0 L45.7,16.0 L57.1,13.2 L68.6,17.0 L80.0,16.4 L91.4,11.8 L102.9,9.6 L114.3,11.6 L125.7,12.1 L137.1,6.0 L148.6,7.9 L160.0,8.1" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="8.1" r="2.2" fill="#cf3b34"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">标普500</span><span class="mc-chg down">▼ 1.09%</span></div><div class="mc-value num">7659.44</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g5udei7n" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,14.8 L4.6,16.0 L9.1,15.1 L13.7,11.7 L18.3,8.7 L22.9,6.0 L27.4,7.0 L32.0,9.2 L36.6,6.4 L41.1,6.7 L45.7,6.8 L50.3,12.0 L54.9,10.5 L59.4,15.5 L64.0,13.0 L64,22 L0,22 Z" fill="url(#g4gld4le)"/>
-<path d="M0.0,14.8 L4.6,16.0 L9.1,15.1 L13.7,11.7 L18.3,8.7 L22.9,6.0 L27.4,7.0 L32.0,9.2 L36.6,6.4 L41.1,6.7 L45.7,6.8 L50.3,12.0 L54.9,10.5 L59.4,15.5 L64.0,13.0" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="13.0" r="2.2" fill="#cf3b34"/>
-</svg></span><span class="mkt-val num">7659.44</span><span class="chg down">▼ 1.09%</span></div><div class="mkt-row"><span class="mkt-name">纳斯达克</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="gniaij0p" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,18.4 L11.4,20.0 L22.9,18.8 L34.3,14.0 L45.7,9.8 L57.1,6.0 L68.6,7.4 L80.0,10.5 L91.4,6.6 L102.9,7.0 L114.3,7.1 L125.7,14.4 L137.1,12.3 L148.6,19.3 L160.0,15.7 L160,26 L0,26 Z" fill="url(#g5udei7n)"/>
+<path d="M0.0,18.4 L11.4,20.0 L22.9,18.8 L34.3,14.0 L45.7,9.8 L57.1,6.0 L68.6,7.4 L80.0,10.5 L91.4,6.6 L102.9,7.0 L114.3,7.1 L125.7,14.4 L137.1,12.3 L148.6,19.3 L160.0,15.7" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="15.7" r="2.2" fill="#cf3b34"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">纳斯达克</span><span class="mc-chg down">▼ 2.14%</span></div><div class="mc-value num">26140.03</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gouhm6xc" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,11.5 L4.6,11.1 L9.1,11.0 L13.7,8.8 L18.3,6.8 L22.9,6.0 L27.4,6.4 L32.0,8.8 L36.6,7.6 L41.1,8.4 L45.7,8.7 L50.3,12.2 L54.9,12.1 L59.4,16.0 L64.0,14.1 L64,22 L0,22 Z" fill="url(#gniaij0p)"/>
-<path d="M0.0,11.5 L4.6,11.1 L9.1,11.0 L13.7,8.8 L18.3,6.8 L22.9,6.0 L27.4,6.4 L32.0,8.8 L36.6,7.6 L41.1,8.4 L45.7,8.7 L50.3,12.2 L54.9,12.1 L59.4,16.0 L64.0,14.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="14.1" r="2.2" fill="#1c8a5a"/>
-</svg></span><span class="mkt-val num">26140.03</span><span class="chg down">▼ 2.14%</span></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-row"><span class="mkt-name">德国DAX</span><span class="mkt-spark"></span><span class="mkt-val num">25622.61</span><span class="chg up">▲ 0.95%</span></div><div class="mkt-row"><span class="mkt-name">法国CAC40</span><span class="mkt-spark"></span><span class="mkt-val num">7956.70</span><span class="chg up">▲ 0.28%</span></div><div class="mkt-row"><span class="mkt-name">英国富时100</span><span class="mkt-spark"></span><span class="mkt-val num">10881.90</span><span class="chg up">▲ 0.38%</span></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-row"><span class="mkt-name">上证指数</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="ghovkhtv" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,13.7 L11.4,13.1 L22.9,13.0 L34.3,9.9 L45.7,7.2 L57.1,6.0 L68.6,6.6 L80.0,9.9 L91.4,8.2 L102.9,9.4 L114.3,9.8 L125.7,14.7 L137.1,14.5 L148.6,20.0 L160.0,17.4 L160,26 L0,26 Z" fill="url(#gouhm6xc)"/>
+<path d="M0.0,13.7 L11.4,13.1 L22.9,13.0 L34.3,9.9 L45.7,7.2 L57.1,6.0 L68.6,6.6 L80.0,9.9 L91.4,8.2 L102.9,9.4 L114.3,9.8 L125.7,14.7 L137.1,14.5 L148.6,20.0 L160.0,17.4" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="17.4" r="2.2" fill="#1c8a5a"/>
+</svg></div></div></div></div><div class="mkt-group"><div class="mkt-title">欧股<span>3 项</span></div><div class="mkt-grid"><div class="mkt-card"><div class="mc-top"><span class="mc-name">德国DAX</span><span class="mc-chg up">▲ 0.95%</span></div><div class="mc-value num">25622.61</div><div class="mc-spark"></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">法国CAC40</span><span class="mc-chg up">▲ 0.28%</span></div><div class="mc-value num">7956.70</div><div class="mc-spark"></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">英国富时100</span><span class="mc-chg up">▲ 0.38%</span></div><div class="mc-value num">10881.90</div><div class="mc-spark"></div></div></div></div><div class="mkt-group"><div class="mkt-title">亚太<span>6 项</span></div><div class="mkt-grid"><div class="mkt-card"><div class="mc-top"><span class="mc-name">上证指数</span><span class="mc-chg up">▲ 0.24%</span></div><div class="mc-value num">3716.28</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="ga6kne7e" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,6.1 L4.6,6.0 L9.1,6.6 L13.7,8.6 L18.3,11.3 L22.9,11.0 L27.4,10.5 L32.0,11.7 L36.6,11.7 L41.1,12.3 L45.7,12.2 L50.3,13.6 L54.9,16.0 L59.4,15.6 L64.0,15.0 L64,22 L0,22 Z" fill="url(#ghovkhtv)"/>
-<path d="M0.0,6.1 L4.6,6.0 L9.1,6.6 L13.7,8.6 L18.3,11.3 L22.9,11.0 L27.4,10.5 L32.0,11.7 L36.6,11.7 L41.1,12.3 L45.7,12.2 L50.3,13.6 L54.9,16.0 L59.4,15.6 L64.0,15.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="15.0" r="2.2" fill="#1c8a5a"/>
-</svg></span><span class="mkt-val num">3716.28</span><span class="chg up">▲ 0.24%</span></div><div class="mkt-row"><span class="mkt-name">深证成指</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="gnk1o40f" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,6.1 L11.4,6.0 L22.9,6.9 L34.3,9.6 L45.7,13.4 L57.1,13.0 L68.6,12.3 L80.0,14.0 L91.4,13.9 L102.9,14.9 L114.3,14.7 L125.7,16.6 L137.1,20.0 L148.6,19.5 L160.0,18.7 L160,26 L0,26 Z" fill="url(#ga6kne7e)"/>
+<path d="M0.0,6.1 L11.4,6.0 L22.9,6.9 L34.3,9.6 L45.7,13.4 L57.1,13.0 L68.6,12.3 L80.0,14.0 L91.4,13.9 L102.9,14.9 L114.3,14.7 L125.7,16.6 L137.1,20.0 L148.6,19.5 L160.0,18.7" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="18.7" r="2.2" fill="#1c8a5a"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">深证成指</span><span class="mc-chg down">▼ 0.12%</span></div><div class="mc-value num">11802.46</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g4ila8ep" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,6.0 L4.6,6.0 L9.1,6.5 L13.7,8.1 L18.3,10.5 L22.9,10.3 L27.4,10.4 L32.0,11.8 L36.6,11.6 L41.1,13.0 L45.7,13.1 L50.3,14.4 L54.9,15.9 L59.4,16.0 L64.0,15.9 L64,22 L0,22 Z" fill="url(#gnk1o40f)"/>
-<path d="M0.0,6.0 L4.6,6.0 L9.1,6.5 L13.7,8.1 L18.3,10.5 L22.9,10.3 L27.4,10.4 L32.0,11.8 L36.6,11.6 L41.1,13.0 L45.7,13.1 L50.3,14.4 L54.9,15.9 L59.4,16.0 L64.0,15.9" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="15.9" r="2.2" fill="#1c8a5a"/>
-</svg></span><span class="mkt-val num">11802.46</span><span class="chg down">▼ 0.12%</span></div><div class="mkt-row"><span class="mkt-name">创业板指</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="gwoun9xx" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,6.0 L11.4,6.0 L22.9,6.7 L34.3,9.0 L45.7,12.3 L57.1,12.0 L68.6,12.1 L80.0,14.1 L91.4,13.9 L102.9,15.8 L114.3,16.0 L125.7,17.8 L137.1,19.9 L148.6,20.0 L160.0,19.9 L160,26 L0,26 Z" fill="url(#g4ila8ep)"/>
+<path d="M0.0,6.0 L11.4,6.0 L22.9,6.7 L34.3,9.0 L45.7,12.3 L57.1,12.0 L68.6,12.1 L80.0,14.1 L91.4,13.9 L102.9,15.8 L114.3,16.0 L125.7,17.8 L137.1,19.9 L148.6,20.0 L160.0,19.9" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="19.9" r="2.2" fill="#1c8a5a"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">创业板指</span><span class="mc-chg down">▼ 0.39%</span></div><div class="mc-value num">2772.38</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gc9nvuaj" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,6.0 L4.6,6.0 L9.1,6.3 L13.7,7.7 L18.3,10.0 L22.9,9.9 L27.4,10.0 L32.0,11.6 L36.6,11.5 L41.1,12.7 L45.7,12.8 L50.3,14.2 L54.9,15.4 L59.4,15.6 L64.0,16.0 L64,22 L0,22 Z" fill="url(#gwoun9xx)"/>
-<path d="M0.0,6.0 L4.6,6.0 L9.1,6.3 L13.7,7.7 L18.3,10.0 L22.9,9.9 L27.4,10.0 L32.0,11.6 L36.6,11.5 L41.1,12.7 L45.7,12.8 L50.3,14.2 L54.9,15.4 L59.4,15.6 L64.0,16.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="16.0" r="2.2" fill="#1c8a5a"/>
-</svg></span><span class="mkt-val num">2772.38</span><span class="chg down">▼ 0.39%</span></div><div class="mkt-row"><span class="mkt-name">恒生指数</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="g5fueycs" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,6.0 L11.4,6.0 L22.9,6.4 L34.3,8.4 L45.7,11.6 L57.1,11.5 L68.6,11.7 L80.0,13.8 L91.4,13.6 L102.9,15.3 L114.3,15.5 L125.7,17.4 L137.1,19.2 L148.6,19.4 L160.0,20.0 L160,26 L0,26 Z" fill="url(#gc9nvuaj)"/>
+<path d="M0.0,6.0 L11.4,6.0 L22.9,6.4 L34.3,8.4 L45.7,11.6 L57.1,11.5 L68.6,11.7 L80.0,13.8 L91.4,13.6 L102.9,15.3 L114.3,15.5 L125.7,17.4 L137.1,19.2 L148.6,19.4 L160.0,20.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="20.0" r="2.2" fill="#1c8a5a"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">恒生指数</span><span class="mc-chg up">▲ 0.52%</span></div><div class="mc-value num">24186.83</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gi8fu4ns" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,7.5 L4.6,6.0 L9.1,7.4 L13.7,6.3 L18.3,13.8 L22.9,13.0 L27.4,10.2 L32.0,12.0 L36.6,16.0 L41.1,11.0 L45.7,10.3 L50.3,9.5 L54.9,9.8 L59.4,12.8 L64.0,11.3 L64,22 L0,22 Z" fill="url(#g5fueycs)"/>
-<path d="M0.0,7.5 L4.6,6.0 L9.1,7.4 L13.7,6.3 L18.3,13.8 L22.9,13.0 L27.4,10.2 L32.0,12.0 L36.6,16.0 L41.1,11.0 L45.7,10.3 L50.3,9.5 L54.9,9.8 L59.4,12.8 L64.0,11.3" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="11.3" r="2.2" fill="#1c8a5a"/>
-</svg></span><span class="mkt-val num">24186.83</span><span class="chg up">▲ 0.52%</span></div><div class="mkt-row"><span class="mkt-name">日经225</span><span class="mkt-spark"></span><span class="mkt-val num">65324.07</span><span class="chg up">▲ 1.39%</span></div><div class="mkt-row"><span class="mkt-name">韩国KOSPI</span><span class="mkt-spark"></span><span class="mkt-val num">5668.05</span><span class="chg up">▲ 2.05%</span></div></div></div><div class="tbl-block"><div class="mkt-group"><div class="mkt-row"><span class="mkt-name">伦敦金(现货黄金)</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="gy9cwa6h" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,8.2 L11.4,6.0 L22.9,7.9 L34.3,6.5 L45.7,17.0 L57.1,15.8 L68.6,11.9 L80.0,14.4 L91.4,20.0 L102.9,13.0 L114.3,12.1 L125.7,10.9 L137.1,11.4 L148.6,15.5 L160.0,13.4 L160,26 L0,26 Z" fill="url(#gi8fu4ns)"/>
+<path d="M0.0,8.2 L11.4,6.0 L22.9,7.9 L34.3,6.5 L45.7,17.0 L57.1,15.8 L68.6,11.9 L80.0,14.4 L91.4,20.0 L102.9,13.0 L114.3,12.1 L125.7,10.9 L137.1,11.4 L148.6,15.5 L160.0,13.4" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="13.4" r="2.2" fill="#1c8a5a"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">日经225</span><span class="mc-chg up">▲ 1.39%</span></div><div class="mc-value num">65324.07</div><div class="mc-spark"></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">韩国KOSPI</span><span class="mc-chg up">▲ 2.05%</span></div><div class="mc-value num">5668.05</div><div class="mc-spark"></div></div></div></div></div><div class="tbl-block"><div class="mkt-group"><div class="mkt-grid"><div class="mkt-card"><div class="mc-top"><span class="mc-name">伦敦金(现货黄金)</span><span class="mc-chg up">▲ 0.50%</span></div><div class="mc-value num">4184.76 美元/盎司</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gr07eino" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,7.4 L4.6,10.2 L9.1,7.9 L13.7,12.2 L18.3,12.1 L22.9,9.4 L27.4,15.4 L32.0,12.8 L36.6,6.0 L41.1,8.6 L45.7,9.7 L50.3,16.0 L54.9,8.7 L59.4,9.4 L64.0,9.7 L64,22 L0,22 Z" fill="url(#gy9cwa6h)"/>
-<path d="M0.0,7.4 L4.6,10.2 L9.1,7.9 L13.7,12.2 L18.3,12.1 L22.9,9.4 L27.4,15.4 L32.0,12.8 L36.6,6.0 L41.1,8.6 L45.7,9.7 L50.3,16.0 L54.9,8.7 L59.4,9.4 L64.0,9.7" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="9.7" r="2.2" fill="#1c8a5a"/>
-</svg></span><span class="mkt-val num">4184.76 美元/盎司</span><span class="chg up">▲ 0.50%</span></div><div class="mkt-row"><span class="mkt-name">上海金Au99.99</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="gs77pe1r" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,8.0 L11.4,11.9 L22.9,8.7 L34.3,14.7 L45.7,14.5 L57.1,10.8 L68.6,19.1 L80.0,15.6 L91.4,6.0 L102.9,9.6 L114.3,11.2 L125.7,20.0 L137.1,9.7 L148.6,10.8 L160.0,11.1 L160,26 L0,26 Z" fill="url(#gr07eino)"/>
+<path d="M0.0,8.0 L11.4,11.9 L22.9,8.7 L34.3,14.7 L45.7,14.5 L57.1,10.8 L68.6,19.1 L80.0,15.6 L91.4,6.0 L102.9,9.6 L114.3,11.2 L125.7,20.0 L137.1,9.7 L148.6,10.8 L160.0,11.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="11.1" r="2.2" fill="#1c8a5a"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">上海金Au99.99</span><span class="mc-chg up">▲ 0.97%</span></div><div class="mc-value num">855.40 元/克</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g10ttvzx" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,6.0 L4.6,7.6 L9.1,6.7 L13.7,9.1 L18.3,13.9 L22.9,15.0 L27.4,12.5 L32.0,16.0 L36.6,12.8 L41.1,13.5 L45.7,13.2 L50.3,15.4 L54.9,16.0 L59.4,14.2 L64.0,14.3 L64,22 L0,22 Z" fill="url(#gs77pe1r)"/>
-<path d="M0.0,6.0 L4.6,7.6 L9.1,6.7 L13.7,9.1 L18.3,13.9 L22.9,15.0 L27.4,12.5 L32.0,16.0 L36.6,12.8 L41.1,13.5 L45.7,13.2 L50.3,15.4 L54.9,16.0 L59.4,14.2 L64.0,14.3" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="14.3" r="2.2" fill="#1c8a5a"/>
-</svg></span><span class="mkt-val num">855.40 元/克</span><span class="chg up">▲ 0.97%</span></div><div class="mkt-row"><span class="mkt-name">WTI原油</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="g11tvy07" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,6.0 L11.4,8.2 L22.9,7.0 L34.3,10.3 L45.7,17.1 L57.1,18.6 L68.6,15.1 L80.0,19.9 L91.4,15.6 L102.9,16.5 L114.3,16.1 L125.7,19.1 L137.1,20.0 L148.6,17.5 L160.0,17.6 L160,26 L0,26 Z" fill="url(#g10ttvzx)"/>
+<path d="M0.0,6.0 L11.4,8.2 L22.9,7.0 L34.3,10.3 L45.7,17.1 L57.1,18.6 L68.6,15.1 L80.0,19.9 L91.4,15.6 L102.9,16.5 L114.3,16.1 L125.7,19.1 L137.1,20.0 L148.6,17.5 L160.0,17.6" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="17.6" r="2.2" fill="#1c8a5a"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">WTI原油</span><span class="mc-chg down">▼ 1.41%</span></div><div class="mc-value num">97.63 美元/桶</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gkg1fcv4" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,16.0 L4.6,14.6 L9.1,12.1 L13.7,13.7 L18.3,15.6 L22.9,15.0 L27.4,16.0 L32.0,13.8 L36.6,13.3 L41.1,11.8 L45.7,10.2 L50.3,9.8 L54.9,7.5 L59.4,6.0 L64.0,7.8 L64,22 L0,22 Z" fill="url(#g11tvy07)"/>
-<path d="M0.0,16.0 L4.6,14.6 L9.1,12.1 L13.7,13.7 L18.3,15.6 L22.9,15.0 L27.4,16.0 L32.0,13.8 L36.6,13.3 L41.1,11.8 L45.7,10.2 L50.3,9.8 L54.9,7.5 L59.4,6.0 L64.0,7.8" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="7.8" r="2.2" fill="#cf3b34"/>
-</svg></span><span class="mkt-val num">97.63 美元/桶</span><span class="chg down">▼ 1.41%</span></div><div class="mkt-row"><span class="mkt-name">布伦特原油</span><span class="mkt-spark"><svg viewBox="0 0 64 22" preserveAspectRatio="none" class="spark" aria-hidden="true">
-<defs><linearGradient id="gh8bfoea" x1="0" y1="0" x2="0" y2="1">
+<path d="M0.0,20.0 L11.4,18.0 L22.9,14.5 L34.3,16.8 L45.7,19.5 L57.1,18.7 L68.6,20.0 L80.0,16.9 L91.4,16.2 L102.9,14.1 L114.3,11.9 L125.7,11.4 L137.1,8.0 L148.6,6.0 L160.0,8.5 L160,26 L0,26 Z" fill="url(#gkg1fcv4)"/>
+<path d="M0.0,20.0 L11.4,18.0 L22.9,14.5 L34.3,16.8 L45.7,19.5 L57.1,18.7 L68.6,20.0 L80.0,16.9 L91.4,16.2 L102.9,14.1 L114.3,11.9 L125.7,11.4 L137.1,8.0 L148.6,6.0 L160.0,8.5" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="8.5" r="2.2" fill="#cf3b34"/>
+</svg></div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">布伦特原油</span><span class="mc-chg down">▼ 1.65%</span></div><div class="mc-value num">108.05 美元/桶</div><div class="mc-spark"><svg viewBox="0 0 160 26" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gbseubvu" x1="0" y1="0" x2="0" y2="1">
 <stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
 <stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
-<path d="M0.0,16.0 L4.6,14.4 L9.1,10.7 L13.7,11.0 L18.3,12.7 L22.9,12.2 L27.4,12.1 L32.0,10.0 L36.6,9.7 L41.1,8.5 L45.7,8.5 L50.3,8.5 L54.9,8.9 L59.4,6.0 L64.0,7.4 L64,22 L0,22 Z" fill="url(#gh8bfoea)"/>
-<path d="M0.0,16.0 L4.6,14.4 L9.1,10.7 L13.7,11.0 L18.3,12.7 L22.9,12.2 L27.4,12.1 L32.0,10.0 L36.6,9.7 L41.1,8.5 L45.7,8.5 L50.3,8.5 L54.9,8.9 L59.4,6.0 L64.0,7.4" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-<circle cx="64.0" cy="7.4" r="2.2" fill="#cf3b34"/>
-</svg></span><span class="mkt-val num">108.05 美元/桶</span><span class="chg down">▼ 1.65%</span></div></div></div><div class="note">首饰黄金：首饰金均价 1248.1 元/克；足金回收价 891 元/克（金投网，仅供参考）</div></div>
+<path d="M0.0,20.0 L11.4,17.8 L22.9,12.6 L34.3,13.1 L45.7,15.4 L57.1,14.6 L68.6,14.6 L80.0,11.6 L91.4,11.2 L102.9,9.5 L114.3,9.5 L125.7,9.6 L137.1,10.0 L148.6,6.0 L160.0,7.9 L160,26 L0,26 Z" fill="url(#gbseubvu)"/>
+<path d="M0.0,20.0 L11.4,17.8 L22.9,12.6 L34.3,13.1 L45.7,15.4 L57.1,14.6 L68.6,14.6 L80.0,11.6 L91.4,11.2 L102.9,9.5 L114.3,9.5 L125.7,9.6 L137.1,10.0 L148.6,6.0 L160.0,7.9" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="160.0" cy="7.9" r="2.2" fill="#cf3b34"/>
+</svg></div></div></div></div></div><div class="note">首饰黄金：首饰金均价 1248.1 元/克；足金回收价 891 元/克（金投网，仅供参考）</div></div>
 </section>
 <section id="s3">
   <div class="sec-head">
