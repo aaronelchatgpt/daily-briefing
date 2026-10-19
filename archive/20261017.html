@@ -86,9 +86,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* 速览 */
-.hero{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-top:20px;box-shadow:var(--shadow);overflow:hidden}
-.hero>div{padding:16px 18px;border-left:1px solid var(--line-2);min-width:0}
-.hero>div:first-child{border-left:0}
+.hero{display:flex;gap:10px;overflow-x:auto;margin-top:20px;padding-bottom:2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.hero::-webkit-scrollbar{display:none}
+.hero>div{flex:0 0 auto;min-width:132px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 15px;box-shadow:var(--shadow-sm)}
 .hero .k{display:block;font-size:10.5px;color:var(--muted);font-weight:700;letter-spacing:.6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hero .k i{font-style:normal;font-weight:500;font-size:9.5px;letter-spacing:.2px}
 .hero .v{display:block;margin-top:5px;font-family:var(--sans);font-weight:800;font-size:20px;line-height:1.3;letter-spacing:.2px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -174,9 +174,7 @@ footer .sep{margin:0 9px;opacity:.5}
 .top.on{opacity:1;transform:none;pointer-events:auto}
 
 @media (max-width:640px){
-  .hero{grid-template-columns:repeat(2,1fr)}
-  .hero>div:nth-child(3){border-left:0;border-top:1px solid var(--line-2)}
-  .hero>div:nth-child(4){border-top:1px solid var(--line-2)}
+  .hero>div{min-width:124px;padding:11px 13px}
 }
 @media (max-width:400px){
   .wrap{padding:0 14px}
@@ -211,7 +209,7 @@ footer .sep{margin:0 9px;opacity:.5}
 </header>
 <nav class="toc"><div class="wrap"><a href="#s1">全球要闻</a><a href="#s2">全球股市与商品重点数据</a><a href="#s3">科技资讯</a><a href="#s4">加密货币行情</a><a href="#s5">加密资讯</a><button class="toc-refresh" id="rf" aria-label="刷新" title="刷新">⟳</button></div></nav>
 <div class="wrap">
-<div class="hero"><div><span class="k">纳斯达克</span><span class="v num">26140.03<em class="down">▼ 2.14%</em></span></div><div><span class="k">伦敦金 <i>美元/盎司</i></span><span class="v num">4164.05<em class="down">▼ 0.16%</em></span></div><div><span class="k">布伦特原油 <i>美元/桶</i></span><span class="v num">109.93<em class="up">▲ 3.78%</em></span></div><div><span class="k">比特币 BTC</span><span class="v num">$81,781.18<em class="down">▼ 0.82%</em></span></div></div>
+<div class="hero"><div><span class="k">上证指数</span><span class="v num">3716.28<em class="up">▲ 0.24%</em></span></div><div><span class="k">深证成指</span><span class="v num">11802.46<em class="down">▼ 0.12%</em></span></div><div><span class="k">恒生指数</span><span class="v num">24186.83<em class="up">▲ 0.52%</em></span></div><div><span class="k">纳斯达克</span><span class="v num">26140.03<em class="down">▼ 2.14%</em></span></div><div><span class="k">伦敦金 <i>美元/盎司</i></span><span class="v num">4164.05<em class="down">▼ 0.16%</em></span></div><div><span class="k">布伦特原油 <i>美元/桶</i></span><span class="v num">109.93<em class="up">▲ 3.78%</em></span></div><div><span class="k">比特币 BTC</span><span class="v num">$81,781.18<em class="down">▼ 0.82%</em></span></div></div>
 <div class="media">
   <div class="media-head"><span class="lab">🎧 语音播报</span><span>晓晓 · 自动生成</span></div>
   <audio controls preload="none" src="../audio/20261017.mp3"></audio>
