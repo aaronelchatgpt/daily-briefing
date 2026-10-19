@@ -131,6 +131,22 @@ section{scroll-margin-top:70px}
 .news li:last-child{border-bottom:0;padding-bottom:6px}
 .news li:hover{background:rgba(11,107,203,.025)}
 .news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
+.cat{display:inline-block;margin-right:8px;padding:2px 9px;border-radius:6px;font-size:11.5px;font-weight:800;letter-spacing:.4px;vertical-align:1px;white-space:nowrap}
+.cat-green{color:#1c8a5a;background:rgba(28,138,90,.11)}
+.cat-blue{color:#0b6bcb;background:rgba(11,107,203,.11)}
+.cat-purple{color:#7c4dff;background:rgba(124,77,255,.12)}
+.cat-orange{color:#e8712a;background:rgba(232,113,42,.12)}
+.cat-teal{color:#0e8f8f;background:rgba(14,143,143,.12)}
+.cat-red{color:#cf3b34;background:rgba(207,59,52,.11)}
+.cat-default{color:var(--ink-2);background:var(--line-2)}
+@media (prefers-color-scheme: dark){
+  .cat-green{background:rgba(63,191,135,.16)}
+  .cat-blue{background:rgba(90,162,255,.16)}
+  .cat-purple{background:rgba(160,120,255,.18)}
+  .cat-orange{background:rgba(255,150,90,.16)}
+  .cat-teal{background:rgba(60,200,200,.16)}
+  .cat-red{background:rgba(255,111,102,.16)}
+}
 .news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
 .news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
 .src{display:inline-block;margin-left:8px;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.2px;vertical-align:baseline}
@@ -280,7 +296,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>科技资讯</h2>
     <span class="sec-count">4 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>特斯拉 Roadster 新玩法：马斯克称新款 Roadster 车主可指令车辆自主完成发布会演示的特技动作，得州总部将建环形赛道。<span class="src">IT之家 07:11</span></h3></li><li><h3>马斯克谈美债与AI：称美债问题只能靠AI和机器人解决，同时承认自己在政治事务中"有些偏离正轨"。<span class="src">财联社 08:28</span></h3></li><li><h3>内存"红海"预警：韩财长称半导体繁荣至少延续至2027年，2029年或现供给过剩，存储厂扩产节奏成关键。<span class="src">财联社 08:57</span></h3></li><li><h3>机构调研风向：节后百家机构调研股曝光，源杰科技获284家机构调研居首，光模块与算力链仍是焦点。<span class="src">证券时报 08:12</span></h3></li></ol></div>
+  <div class="card"><ol class="news tech-list"><li><h3>特斯拉 Roadster 新玩法：马斯克称新款 Roadster 车主可指令车辆自主完成发布会演示的特技动作，得州总部将建环形赛道。</h3><span class="src">IT之家 07:11</span></li><li><h3>马斯克谈美债与AI：称美债问题只能靠AI和机器人解决，同时承认自己在政治事务中"有些偏离正轨"。</h3><span class="src">财联社 08:28</span></li><li><h3>内存"红海"预警：韩财长称半导体繁荣至少延续至2027年，2029年或现供给过剩，存储厂扩产节奏成关键。</h3><span class="src">财联社 08:57</span></li><li><h3>机构调研风向：节后百家机构调研股曝光，源杰科技获284家机构调研居首，光模块与算力链仍是焦点。</h3><span class="src">证券时报 08:12</span></li></ol></div>
 </section>
 <section id="s4">
   <div class="sec-head">

@@ -131,6 +131,22 @@ section{scroll-margin-top:70px}
 .news li:last-child{border-bottom:0;padding-bottom:6px}
 .news li:hover{background:rgba(11,107,203,.025)}
 .news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
+.cat{display:inline-block;margin-right:8px;padding:2px 9px;border-radius:6px;font-size:11.5px;font-weight:800;letter-spacing:.4px;vertical-align:1px;white-space:nowrap}
+.cat-green{color:#1c8a5a;background:rgba(28,138,90,.11)}
+.cat-blue{color:#0b6bcb;background:rgba(11,107,203,.11)}
+.cat-purple{color:#7c4dff;background:rgba(124,77,255,.12)}
+.cat-orange{color:#e8712a;background:rgba(232,113,42,.12)}
+.cat-teal{color:#0e8f8f;background:rgba(14,143,143,.12)}
+.cat-red{color:#cf3b34;background:rgba(207,59,52,.11)}
+.cat-default{color:var(--ink-2);background:var(--line-2)}
+@media (prefers-color-scheme: dark){
+  .cat-green{background:rgba(63,191,135,.16)}
+  .cat-blue{background:rgba(90,162,255,.16)}
+  .cat-purple{background:rgba(160,120,255,.18)}
+  .cat-orange{background:rgba(255,150,90,.16)}
+  .cat-teal{background:rgba(60,200,200,.16)}
+  .cat-red{background:rgba(255,111,102,.16)}
+}
 .news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
 .news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
 .src{display:inline-block;margin-left:8px;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.2px;vertical-align:baseline}
@@ -280,7 +296,7 @@ footer .sep{margin:0 9px;opacity:.5}
     <h2>科技资讯</h2>
     <span class="sec-count">3 条</span>
   </div>
-  <div class="card"><ol class="news"><li><h3>【AI短剧概念爆发】短剧、漫剧、AI剧成为内容生态新竞争主线。10月14日AI短剧/漫剧概念再度爆发，并从传媒、影视扩散到游戏行业，多只概念股涨停。<span class="src">新浪财经 07:48</span></h3></li><li><h3>【长鑫科技获省级调研关注】安徽省委书记李乐成10月14日赴长鑫科技调研并主持座谈会，指出要突出科技创新供给和产业需求牵引，支持企业与高校协同攻关。<span class="src">新浪财经 07:57</span></h3></li><li><h3>【OpenAI工程师涉窃听设备案】FBI称一名OpenAI员工利用其妻子的ChatGPT账号，研究如何在公司办公室内安装秘密录音设备，OpenAI已于周二作出回应。<span class="src">新浪财经 07:58</span></h3></li></ol></div>
+  <div class="card"><ol class="news tech-list"><li><h3><span class="cat cat-default">AI短剧概念爆发</span>短剧、漫剧、AI剧成为内容生态新竞争主线。10月14日AI短剧/漫剧概念再度爆发，并从传媒、影视扩散到游戏行业，多只概念股涨停。</h3><span class="src">新浪财经 07:48</span></li><li><h3><span class="cat cat-default">长鑫科技获省级调研关注</span>安徽省委书记李乐成10月14日赴长鑫科技调研并主持座谈会，指出要突出科技创新供给和产业需求牵引，支持企业与高校协同攻关。</h3><span class="src">新浪财经 07:57</span></li><li><h3><span class="cat cat-default">OpenAI工程师涉窃听设备案</span>FBI称一名OpenAI员工利用其妻子的ChatGPT账号，研究如何在公司办公室内安装秘密录音设备，OpenAI已于周二作出回应。</h3><span class="src">新浪财经 07:58</span></li></ol></div>
 </section>
 <section id="s4">
   <div class="sec-head">
