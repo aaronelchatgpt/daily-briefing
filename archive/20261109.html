@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a1f38">
+<title>全球早报 · 2026年11月9日 星期一</title>
+<meta name="description" content="全球早报：要闻、行情、科技与加密市场速览。2026年11月9日 星期一">
+<meta property="og:title" content="全球早报 · 2026年11月9日 星期一">
+<meta property="og:description" content="要闻 · 行情 · 科技 · 加密">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%B0%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f3f5f8; --card:#ffffff; --ink:#0f1b2d; --ink-2:#3d4a5c; --muted:#8794a6;
+  --line:#e5e9f0; --line-2:#eef1f6;
+  --navy:#0a1f38; --navy-2:#123a63; --blue:#0b6bcb; --gold:#b08d3f;
+  --up:#cf3b34; --down:#1c8a5a; --flat:#9aa4b2;
+  --radius:18px;
+  --shadow:0 1px 2px rgba(15,27,45,.04), 0 10px 30px rgba(15,27,45,.06);
+  --shadow-lg:0 2px 6px rgba(15,27,45,.06), 0 22px 60px rgba(15,27,45,.10);
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
+  --serif:Georgia,"Times New Roman","Songti SC",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b0f15; --card:#141a22; --ink:#eaeef5; --ink-2:#b8c1cd; --muted:#7f8a99;
+    --line:#212a35; --line-2:#1a222c;
+    --navy:#0a1f38; --navy-2:#0f2a45; --blue:#5aa2ff; --gold:#d0a94f;
+    --up:#ff6f66; --down:#3fbf87; --flat:#7d8794;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 34px rgba(0,0,0,.35);
+    --shadow-lg:0 2px 6px rgba(0,0,0,.45), 0 24px 64px rgba(0,0,0,.5);
+  }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased;padding-bottom:calc(40px + env(safe-area-inset-bottom))}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+.wrap{max-width:780px;margin:0 auto;padding:0 18px}
+
+/* 顶部阅读进度 */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--blue));z-index:60;transition:width .08s linear}
+
+/* 报头 */
+.masthead{position:relative;overflow:hidden;color:#fff;padding:calc(46px + env(safe-area-inset-top)) 0 38px;
+  background:
+    radial-gradient(1100px 420px at 88% -12%, rgba(11,107,203,.55), transparent 62%),
+    radial-gradient(700px 320px at 4% 130%, rgba(176,141,63,.22), transparent 64%),
+    linear-gradient(135deg,#081a30 0%,#0d2845 56%,#123a63 100%);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.masthead::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:46px 46px;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 78%);
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 78%);
+}
+.masthead::after{content:"11.09";position:absolute;right:-4px;bottom:-30px;font-family:var(--sans);font-weight:800;font-size:112px;line-height:1;letter-spacing:-5px;color:rgba(255,255,255,.05);pointer-events:none}
+.masthead .wrap{position:relative;z-index:1;display:flex;flex-direction:column;gap:12px}
+.brandmark{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brandmark h1{margin:0;font-size:34px;line-height:1.15;font-weight:800;letter-spacing:3px}
+.brand-en{font-size:10px;letter-spacing:3.4px;color:rgba(255,255,255,.58);text-transform:uppercase;font-weight:700;padding-bottom:4px}
+.mastmeta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13.5px}
+.dateline{font-weight:700;letter-spacing:.6px}
+.masthead .dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.4)}
+.stamp{color:rgba(255,255,255,.62);font-size:12.5px;letter-spacing:.4px}
+.tagline{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;margin-top:4px;padding:4px 12px;border-radius:999px;font-size:12px;letter-spacing:.6px;background:rgba(255,255,255,.10);color:#fff;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px)}
+
+/* 吸顶目录 */
+.toc{position:sticky;top:0;z-index:50;background:rgba(243,245,248,.82);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--line)}
+@media (prefers-color-scheme: dark){.toc{background:rgba(11,15,21,.82)}}
+.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding:11px 18px;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{flex:none;text-decoration:none;color:var(--ink-2);font-size:12.5px;font-weight:600;letter-spacing:.3px;padding:6px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);white-space:nowrap;transition:all .2s}
+.toc a:hover{color:var(--blue);border-color:var(--blue)}
+.toc a.on{color:#fff;background:var(--navy);border-color:var(--navy);box-shadow:var(--shadow)}
+.toc-refresh{flex:none;margin-left:auto;width:32px;height:32px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink-2);font-size:15px;line-height:1;display:grid;place-items:center;cursor:pointer;transition:all .18s}
+.toc-refresh:hover{color:var(--blue);border-color:var(--blue);transform:rotate(90deg)}
+
+/* 下拉刷新 */
+.ptr{position:fixed;top:0;left:0;right:0;height:0;overflow:hidden;z-index:70;pointer-events:none;display:flex;align-items:flex-end;justify-content:center;background:linear-gradient(180deg,rgba(243,245,248,.98),rgba(243,245,248,0));opacity:0;transition:opacity .15s}
+@media (prefers-color-scheme: dark){.ptr{background:linear-gradient(180deg,rgba(11,15,21,.98),rgba(11,15,21,0))}}
+.ptr-in{display:flex;align-items:center;gap:8px;padding:10px 0;font-size:12px;color:var(--muted);letter-spacing:.5px;transform:translateY(-120%);transition:transform .18s}
+.ptr-spin{width:15px;height:15px;border:2px solid var(--line);border-top-color:var(--blue);border-radius:50%}
+.ptr.loading .ptr-spin{animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* 速览 */
+.hero{display:flex;gap:10px;overflow-x:auto;margin-top:20px;padding-bottom:2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.hero::-webkit-scrollbar{display:none}
+.hero>div{flex:0 0 auto;min-width:132px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 15px;box-shadow:var(--shadow-sm)}
+.hero .k{display:block;font-size:10.5px;color:var(--muted);font-weight:700;letter-spacing:.6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero .k i{font-style:normal;font-weight:500;font-size:9.5px;letter-spacing:.2px}
+.hero .v{display:block;margin-top:5px;font-family:var(--sans);font-weight:800;font-size:20px;line-height:1.3;letter-spacing:.2px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero .v em{display:block;font:600 12px/1.4 var(--sans);font-style:normal;margin-top:2px;white-space:nowrap}
+.hero .v em.up{color:var(--up)} .hero .v em.down{color:var(--down)} .hero .v em.flat{color:var(--flat)}
+
+/* 语音播报 */
+.media{margin-top:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;animation:rise .55s cubic-bezier(.2,.7,.3,1) both}
+.media-head{display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:800;letter-spacing:.5px}
+.media-head .lab{display:inline-flex;align-items:center;gap:7px}
+.media-head span{margin-left:auto;font-size:11.5px;font-weight:600;color:var(--muted);letter-spacing:.3px}
+.media audio{width:100%;height:46px;margin-top:13px;display:block;border-radius:10px}
+.media-actions{display:flex;gap:10px;margin-top:13px;flex-wrap:wrap}
+.btn{flex:1;min-width:132px;display:inline-flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;font-size:13.5px;font-weight:700;padding:11px 14px;border-radius:11px;background:var(--navy);color:#fff;transition:filter .18s,transform .18s}
+.btn:hover{filter:brightness(1.12)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--ink-2);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--blue);color:var(--blue)}
+
+/* 区块头 */
+section{scroll-margin-top:70px}
+.sec-head{position:relative;display:flex;align-items:center;gap:11px;margin:38px 0 16px;padding-bottom:11px;border-bottom:1px solid var(--line)}
+.sec-head::after{content:"";position:absolute;left:0;bottom:-1px;width:58px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.ghost{position:absolute;right:-6px;top:-26px;font-family:var(--sans);font-weight:800;font-size:64px;line-height:1;letter-spacing:-3px;color:rgba(15,27,45,.045);pointer-events:none;user-select:none}
+@media (prefers-color-scheme: dark){.ghost{color:rgba(255,255,255,.045)}}
+.sec-no{flex:none;width:27px;height:27px;border-radius:9px;background:var(--navy);color:#fff;font-size:11.5px;font-weight:800;display:grid;place-items:center;letter-spacing:.5px;box-shadow:0 4px 12px rgba(10,31,56,.22)}
+.sec-head h2{margin:0;font-size:18.5px;font-weight:800;letter-spacing:.8px}
+.sec-meta{display:block;margin-top:3px;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sec-count{margin-left:auto;font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.5px}
+
+/* 卡片 */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;animation:rise .55s cubic-bezier(.2,.7,.3,1) both}
+.data-card{padding:18px 20px}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.card{animation:none}}
+
+/* 新闻 */
+.news{list-style:none;margin:0;padding:0;counter-reset:n}
+.news li{counter-increment:n;position:relative;padding:22px 20px 22px 52px;border-bottom:1px solid var(--line);transition:background .2s}
+.news li:last-child{border-bottom:0;padding-bottom:6px}
+.news li:hover{background:rgba(11,107,203,.025)}
+.news li::before{content:counter(n,decimal-leading-zero);position:absolute;left:20px;top:21px;font-family:var(--sans);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.5px}
+.cat{display:inline-block;margin-right:8px;padding:2px 9px;border-radius:6px;font-size:11.5px;font-weight:800;letter-spacing:.4px;vertical-align:1px;white-space:nowrap}
+.cat-green{color:#1c8a5a;background:rgba(28,138,90,.11)}
+.cat-blue{color:#0b6bcb;background:rgba(11,107,203,.11)}
+.cat-purple{color:#7c4dff;background:rgba(124,77,255,.12)}
+.cat-orange{color:#e8712a;background:rgba(232,113,42,.12)}
+.cat-teal{color:#0e8f8f;background:rgba(14,143,143,.12)}
+.cat-red{color:#cf3b34;background:rgba(207,59,52,.11)}
+.cat-default{color:var(--ink-2);background:var(--line-2)}
+@media (prefers-color-scheme: dark){
+  .cat-green{background:rgba(63,191,135,.16)}
+  .cat-blue{background:rgba(90,162,255,.16)}
+  .cat-purple{background:rgba(160,120,255,.18)}
+  .cat-orange{background:rgba(255,150,90,.16)}
+  .cat-teal{background:rgba(60,200,200,.16)}
+  .cat-red{background:rgba(255,111,102,.16)}
+}
+.news h3{margin:0 0 2px;font-size:15.8px;font-weight:800;line-height:1.5;letter-spacing:.2px}
+.news p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.66}
+.src{display:inline-block;margin-left:8px;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.2px;vertical-align:baseline}
+
+/* 行情 */
+.mkt-group+.mkt-group{margin-top:16px}
+.mkt-title{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-size:12px;font-weight:800;color:var(--muted);letter-spacing:1.4px;text-transform:uppercase;padding-bottom:7px;border-bottom:1px solid var(--line-2);margin-bottom:2px}
+.mkt-title span{font-size:11px;font-weight:600;letter-spacing:.3px;text-transform:none}
+.mkt-row{display:flex;align-items:center;gap:10px;padding:9.5px 2px;border-bottom:1px dashed var(--line-2)}
+.mkt-row:last-child{border-bottom:0}
+.mkt-name{flex:1;font-size:14px;font-weight:600;color:var(--ink);min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mkt-spark{flex:0 0 64px;height:22px;display:block}
+.mkt-spark .spark{width:100%;height:22px;margin:0}
+.mkt-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.mkt-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.mkt-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line-2);border-radius:14px;padding:12px 13px;background:linear-gradient(180deg,rgba(11,107,203,.03),rgba(11,107,203,0))}
+.mc-top{display:flex;align-items:baseline;gap:6px}
+.mc-name{flex:1;font-size:13px;font-weight:700;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mc-chg{font-size:12px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.mc-chg.up{color:var(--up)} .mc-chg.down{color:var(--down)}
+.mc-spark{height:74px;margin:8px 0 6px}
+.mc-spark .spark{width:100%;height:74px;margin:0}
+.mc-empty{display:grid;place-items:center;font-size:10.5px;color:var(--muted);border:1px dashed var(--line);border-radius:8px}
+.mc-value{font-size:18px;font-weight:800;letter-spacing:.3px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mkt-val{font-size:16px;font-weight:800;letter-spacing:.2px;font-family:var(--sans);font-variant-numeric:tabular-nums}
+.chg{flex:none;min-width:82px;text-align:right;font-size:13px;font-weight:800;padding:3px 10px;border-radius:8px;font-variant-numeric:tabular-nums;letter-spacing:.2px}
+.chg.up{color:var(--up);background:rgba(207,59,52,.08)}
+.chg.down{color:var(--down);background:rgba(28,138,90,.09)}
+.chg.flat{color:var(--flat);background:rgba(154,164,178,.10)}
+@media (prefers-color-scheme: dark){.chg.up{background:rgba(255,111,102,.12)}.chg.down{background:rgba(63,191,135,.12)}}
+.chg-inline{font-size:12.5px;font-weight:800;letter-spacing:.2px}
+.chg-inline.up{color:var(--up)} .chg-inline.down{color:var(--down)} .chg-inline.flat{color:var(--flat)}
+
+/* 点评 */
+.note{margin-top:14px;padding:13px 16px;border-radius:12px;font-size:13.5px;line-height:1.75;background:linear-gradient(180deg,#fffdf6,#fff9ea);border:1px solid #f0e3c2;border-left:3px solid var(--gold);color:var(--ink-2)}
+@media (prefers-color-scheme: dark){.note{background:linear-gradient(180deg,#221d12,#1c1810);border-color:#3b3320;border-left-color:var(--gold)}}
+.note b{color:var(--ink);margin-right:6px;letter-spacing:.5px}
+.src-line{margin-top:12px;font-size:11.5px;color:var(--muted);line-height:1.7}
+
+/* 币卡 */
+.coin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px}
+.coin{background:linear-gradient(180deg,rgba(11,107,203,.035),rgba(11,107,203,0));border:1px solid var(--line-2);border-radius:13px;padding:13px 15px;transition:transform .18s,box-shadow .18s,border-color .18s}
+.coin:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--line)}
+.coin-name{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.4px;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.coin-spark{height:38px;margin:2px 0 5px}
+.coin-spark .spark{width:100%;height:38px;margin:0}
+.coin-price{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:.2px;font-family:var(--sans);font-variant-numeric:tabular-nums}
+.coin .chg-inline{display:block;margin-top:4px}
+
+/* 走势图 */
+.tbl-block + .tbl-block{margin-top:18px;padding-top:18px;border-top:1px solid var(--line-2)}
+.chart-inline{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.chart-title{font-size:11px;font-weight:800;letter-spacing:1.4px;color:var(--muted);text-transform:uppercase;margin-bottom:12px}
+.trend-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:10px}
+.trend{border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;background:linear-gradient(180deg,rgba(11,107,203,.03),rgba(11,107,203,0))}
+.trend-top{display:flex;align-items:baseline;gap:6px}
+.t-name{font-size:11.5px;font-weight:700;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.t-chg{font-size:11px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.t-chg.up{color:var(--up)} .t-chg.down{color:var(--down)}
+.spark{display:block;width:100%;height:44px;margin:6px 0 4px;overflow:visible}
+.trend-bottom{display:flex;justify-content:space-between;gap:6px;font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.t-last{font-weight:800;color:var(--ink-2)}
+.t-range{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* 页脚 */
+footer{margin-top:40px;padding:22px 0 10px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:2;text-align:center;letter-spacing:.2px}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}
+footer .sep{margin:0 9px;opacity:.5}
+
+/* 回到顶部 */
+.top{position:fixed;right:18px;bottom:calc(20px + env(safe-area-inset-bottom));width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink-2);font-size:17px;display:grid;place-items:center;box-shadow:var(--shadow-lg);cursor:pointer;opacity:0;transform:translateY(8px);pointer-events:none;transition:all .25s;z-index:55}
+.top.on{opacity:1;transform:none;pointer-events:auto}
+
+@media (max-width:640px){
+  .hero>div{min-width:124px;padding:11px 13px}
+}
+@media (max-width:400px){
+  .wrap{padding:0 14px}
+  body{font-size:15px}
+  .masthead{padding-top:calc(38px + env(safe-area-inset-top))}
+  .brandmark h1{font-size:27px;letter-spacing:2px}
+  .masthead::after{font-size:92px;bottom:-22px}
+  .news li{padding:20px 15px 20px 44px}
+  .news li::before{left:15px;top:19px}
+  .data-card{padding:15px 15px}
+  .coin-grid{grid-template-columns:repeat(2,1fr)}
+  .trend-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .mkt-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .mkt-card{padding:10px 11px}
+  .mc-spark{height:64px}
+  .mc-spark .spark{height:64px}
+  .mc-value{font-size:16px}
+  .trend{padding:9px 10px}
+  .coin-price{font-size:15px}
+  .sec-head h2{font-size:17px}
+  .ghost{font-size:56px;top:-20px}
+}
+@media print{
+  .toc,.top,.progress{display:none!important}
+  body{background:#fff}
+  .card{box-shadow:none;break-inside:avoid;animation:none}
+  .masthead{background:#0a1f38!important;-webkit-print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="pg"></div>
+<header class="masthead">
+  <div class="wrap">
+    <div class="brandmark"><h1>全球早报</h1><span class="brand-en">Global Morning Briefing</span></div>
+    <div class="mastmeta"><span class="dateline">2026年11月9日 星期一</span><span class="dot"></span><span class="stamp">更新 11-09 09:12</span></div>
+    <span class="tagline">要闻 · 行情 · 科技 · 加密</span>
+  </div>
+</header>
+<nav class="toc"><div class="wrap"><a href="#s1">全球要闻</a><a href="#s2">财经新闻</a><a href="#s3">社会热点</a><a href="#s4">全球股市与商品重点数据</a><a href="#s5">科技资讯</a><a href="#s6">加密货币行情</a><a href="#s7">加密资讯</a><button class="toc-refresh" id="rf" aria-label="刷新" title="刷新">⟳</button></div></nav>
+<div class="wrap">
+<div class="hero"><div><span class="k">上证指数</span><span class="v num">3649.16<em class="flat">—0.00%</em></span></div><div><span class="k">深证成指</span><span class="v num">11175.78<em class="flat">—0.00%</em></span></div><div><span class="k">恒生指数</span><span class="v num">24481.86<em class="down">▼ 1.27%</em></span></div><div><span class="k">纳斯达克</span><span class="v num">24579.42<em class="up">▲ 1.09%</em></span></div><div><span class="k">现货黄金 <i>美元/盎司</i></span><span class="v num">4107.95<em class="up">▲ 0.91%</em></span></div><div><span class="k">布伦特原油 <i>美元/桶</i></span><span class="v num">97.10<em class="down">▼ 1.24%</em></span></div><div><span class="k">比特币 BTC</span><span class="v num">$75,274.00<em class="down">▼ 0.70%</em></span></div></div>
+<div class="media">
+  <div class="media-head"><span class="lab">🎧 语音播报</span><span>晓晓 · 自动生成</span></div>
+  <audio controls preload="none" src="../audio/20261109.mp3"></audio>
+  <div class="media-actions">
+    <a class="btn" href="../pdf/20261109.pdf" download>📄 下载 PDF 版</a>
+  </div>
+</div>
+<section id="s1">
+  <div class="sec-head">
+    <span class="ghost">01</span>
+    <span class="sec-no">01</span>
+    <h2>全球要闻 · TOP5</h2>
+    <span class="sec-count">5 条</span>
+  </div>
+  <div class="card"><ol class="news"><li><h3>黄仁勋承认对妻子不忠，英伟达董事会启动调查<span class="src">IT之家、百度热搜，11月8日</span></h3><p>黄仁勋发布内部信承认对妻子不忠并承担全部责任，向家人与员工致歉，表示将继续履职。英伟达董事会称由独立董事组成专门委员会、聘请外部法律顾问审查。</p></li><li><h3>中、美10月CPI、PPI本周密集出炉<span class="src">新浪财经，11月9日 08:51</span></h3><p>本周国内10月CPI、PPI及M2、社融、新增人民币贷款等数据集中公布，美国10月CPI、PPI同样在列，是判断后续货币政策路径的关键窗口。</p></li><li><h3>日本确认夏季三次干预汇市，含近30年首次对美协调<span class="src">新浪财经，11月9日 08:49</span></h3><p>日本证实夏季三度入市支撑日元，其中一次与美国协调行动，为近30年来首次。市场关注其对日元套利交易与全球资金流向的后续影响。</p></li><li><h3>国际油价单周暴跌超16%，创2020年以来最大跌幅<span class="src">百度热搜，11月9日</span></h3><p>受冲突降温预期增强影响，纽约原油主力一度跌破90美元、布伦特跌破97美元，布伦特周累计跌幅超16%。今晨WTI报90.17美元，仍跌0.72%。</p></li><li><h3>AI板块回调，资金大举涌入电池赛道<span class="src">新浪财经，11月9日 08:34</span></h3><p>部分投资者撤离AI，转投电池及电池驱动技术初创企业，电动货运卡车底盘厂商Harbinger Motors完成2.4亿美元D轮融资，显示赛道偏好正在切换。</p></li></ol></div>
+</section>
+<section id="s2">
+  <div class="sec-head">
+    <span class="ghost">02</span>
+    <span class="sec-no">02</span>
+    <h2>财经新闻</h2>
+    <span class="sec-count">5 条</span>
+  </div>
+  <div class="card"><ol class="news"><li><h3>江西铜业：董事长周少兵提议回购公司A股股份<span class="src">新浪财经，11月9日 09:02</span></h3></li><li><h3>赣锋锂业：实控人、董事长提议回购A股，称基于对公司长期价值的认可<span class="src">新浪财经，11月9日 09:01</span></h3></li><li><h3>先健科技拟折让约3.61%发行9.26亿股认购股份，净筹约14.7亿港元<span class="src">新浪财经，11月9日 09:02</span></h3></li><li><h3>国内期货早盘涨跌互现：铂、玻璃涨超2%，纯碱涨近2%，甲醇、燃料油、沪锡涨超1%<span class="src">新浪财经，11月9日 09:00</span></h3></li><li><h3>伯克希尔·哈撒韦筹备发行日元计价基准规模高级无担保债券，委托瑞穗与美银证券承销<span class="src">新浪财经，11月9日 08:35</span></h3></li></ol></div>
+</section>
+<section id="s3">
+  <div class="sec-head">
+    <span class="ghost">03</span>
+    <span class="sec-no">03</span>
+    <h2>社会热点</h2>
+    <span class="sec-count">10 条</span>
+  </div>
+  <div class="card"><ol class="news"><li><h3>老人数量第一次比孩子多<span class="src">百度热搜，热度 781.0万</span></h3><p>2025年每100名劳动年龄人口对应23位65岁以上老人、22名儿童，"养老"首次重于"养小"。</p></li><li><h3>20公斤陨石砸进石家庄农田<span class="src">百度热搜，热度 733.3万</span></h3><p>11月6日火流星划过华北，陨石坠落石家庄农田，"陨石猎人"在农户家中找到约20公斤主体。</p></li><li><h3>疑秦始皇儿子头骨面容复原图公布<span class="src">百度热搜，热度 723.8万</span></h3><p>西北大学团队复原秦陵东侧陪葬墓约30岁男子面容，其头骨嵌青铜箭头、尸骨遭肢解。</p></li><li><h3>南京辟谣"31岁医生被刺身亡"<span class="src">百度热搜，热度 685.2万</span></h3><p>网传"医生张明磊被刺伤身亡"，南京卫健部门11月7日辟谣：无此医生，亦无该事件。</p></li><li><h3>内塔尼亚胡时代即将谢幕了吗<span class="src">百度热搜，热度 666.1万</span></h3><p>内塔尼亚胡首次在总统授权组阁环节被跳过，埃森科特获优先组阁权，以色列进入过渡期。</p></li><li><h3>最强厄尔尼诺来了 这个冬天怎么过<span class="src">百度热搜，热度 637.2万</span></h3><p>有记录以来最强厄尔尼诺10月形成，我国冬季大部偏暖概率大，但冷暖起伏明显、寒潮偏多。</p></li><li><h3>特朗普："铁门"特遣行动正全面展开<span class="src">百度热搜，热度 618.7万</span></h3><p>特朗普称针对伊朗的"铁门"行动全面展开，叠加"史上最大规模海上封锁"，物资进出受阻。</p></li><li><h3>破坏秦始皇陵最高可罚千万<span class="src">百度热搜，热度 609.3万</span></h3><p>陕西修改保护条例：单位罚50万至500万元、个人5万至50万元，情节特别严重最高罚1000万元。</p></li><li><h3>央视曝光后 江西赣州连夜成立调查组<span class="src">百度热搜，热度 599.5万</span></h3><p>央视曝光人行天桥无障碍电梯建成两年长期闲置，赣州蓉江新区住建局9日通报已成立调查组。</p></li><li><h3>立冬后建议改一下睡觉时间<span class="src">百度热搜，热度 503.6万</span></h3><p>建议22至23点入睡，儿童与中老年人适当提前，早晨待太阳出来、气温回升后再起床。</p></li></ol></div>
+</section>
+<section id="s4">
+  <div class="sec-head">
+    <span class="ghost">04</span>
+    <span class="sec-no">04</span>
+    <h2>全球股市与商品重点数据<span class="sec-meta">走势 近 15 个交易日</span></h2>
+    
+  </div>
+  <div class="card data-card"><div class="mkt-grid"><div class="mkt-card"><div class="mc-top"><span class="mc-name">上证指数</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g5onaia9" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,8.0 L21.4,6.0 L42.9,16.2 L64.3,41.2 L85.7,26.4 L107.1,23.2 L128.6,45.6 L150.0,30.5 L171.4,44.2 L192.9,68.0 L214.3,50.3 L235.7,63.9 L257.1,28.4 L278.6,26.7 L300.0,45.2 L300,74 L0,74 Z" fill="url(#g5onaia9)"/>
+<path d="M0.0,8.0 L21.4,6.0 L42.9,16.2 L64.3,41.2 L85.7,26.4 L107.1,23.2 L128.6,45.6 L150.0,30.5 L171.4,44.2 L192.9,68.0 L214.3,50.3 L235.7,63.9 L257.1,28.4 L278.6,26.7 L300.0,45.2" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="45.2" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">3649.16 —0.00%</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">深证成指</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gzacqe3q" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L21.4,7.0 L42.9,13.1 L64.3,35.0 L85.7,15.1 L107.1,23.8 L128.6,42.0 L150.0,27.7 L171.4,48.8 L192.9,68.0 L214.3,56.8 L235.7,65.3 L257.1,36.4 L278.6,27.8 L300.0,46.4 L300,74 L0,74 Z" fill="url(#gzacqe3q)"/>
+<path d="M0.0,6.0 L21.4,7.0 L42.9,13.1 L64.3,35.0 L85.7,15.1 L107.1,23.8 L128.6,42.0 L150.0,27.7 L171.4,48.8 L192.9,68.0 L214.3,56.8 L235.7,65.3 L257.1,36.4 L278.6,27.8 L300.0,46.4" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="46.4" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">11175.78 —0.00%</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">创业板指</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="go14whko" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L21.4,7.2 L42.9,15.0 L64.3,35.6 L85.7,16.9 L107.1,24.9 L128.6,40.6 L150.0,25.5 L171.4,46.0 L192.9,64.2 L214.3,56.3 L235.7,68.0 L257.1,41.2 L278.6,37.4 L300.0,55.1 L300,74 L0,74 Z" fill="url(#go14whko)"/>
+<path d="M0.0,6.0 L21.4,7.2 L42.9,15.0 L64.3,35.6 L85.7,16.9 L107.1,24.9 L128.6,40.6 L150.0,25.5 L171.4,46.0 L192.9,64.2 L214.3,56.3 L235.7,68.0 L257.1,41.2 L278.6,37.4 L300.0,55.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="55.1" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">2465.23 —0.00%</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">恒生指数</span><span class="mc-chg down">▼ 1.27%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g6zxvy29" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,26.3 L21.4,36.9 L42.9,44.1 L64.3,68.0 L85.7,62.7 L107.1,58.8 L128.6,64.4 L150.0,62.7 L171.4,67.2 L192.9,56.0 L214.3,52.7 L235.7,48.3 L257.1,35.2 L278.6,6.0 L300.0,16.5 L300,74 L0,74 Z" fill="url(#g6zxvy29)"/>
+<path d="M0.0,26.3 L21.4,36.9 L42.9,44.1 L64.3,68.0 L85.7,62.7 L107.1,58.8 L128.6,64.4 L150.0,62.7 L171.4,67.2 L192.9,56.0 L214.3,52.7 L235.7,48.3 L257.1,35.2 L278.6,6.0 L300.0,16.5" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="16.5" r="2.2" fill="#cf3b34"/>
+</svg></div><div class="mc-value num">24481.86</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">道琼斯</span><span class="mc-chg down">▼ 0.46%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gy6rp4r2" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,47.6 L21.4,31.8 L42.9,21.0 L64.3,20.6 L85.7,40.2 L107.1,35.8 L128.6,35.3 L150.0,32.4 L171.4,36.4 L192.9,53.5 L214.3,47.1 L235.7,53.0 L257.1,6.0 L278.6,60.9 L300.0,68.0 L300,74 L0,74 Z" fill="url(#gy6rp4r2)"/>
+<path d="M0.0,47.6 L21.4,31.8 L42.9,21.0 L64.3,20.6 L85.7,40.2 L107.1,35.8 L128.6,35.3 L150.0,32.4 L171.4,36.4 L192.9,53.5 L214.3,47.1 L235.7,53.0 L257.1,6.0 L278.6,60.9 L300.0,68.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="68.0" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">51285.73</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">标普500</span><span class="mc-chg up">▲ 0.31%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g26au0jy" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,16.2 L21.4,12.9 L42.9,6.0 L64.3,20.4 L85.7,26.5 L107.1,18.4 L128.6,11.3 L150.0,8.0 L171.4,11.7 L192.9,33.2 L214.3,39.2 L235.7,34.9 L257.1,16.5 L278.6,68.0 L300.0,64.4 L300,74 L0,74 Z" fill="url(#g26au0jy)"/>
+<path d="M0.0,16.2 L21.4,12.9 L42.9,6.0 L64.3,20.4 L85.7,26.5 L107.1,18.4 L128.6,11.3 L150.0,8.0 L171.4,11.7 L192.9,33.2 L214.3,39.2 L235.7,34.9 L257.1,16.5 L278.6,68.0 L300.0,64.4" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="64.4" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">7376.86</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">纳斯达克</span><span class="mc-chg up">▲ 1.09%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g4ahileq" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,13.1 L21.4,13.2 L42.9,6.0 L64.3,24.0 L85.7,25.4 L107.1,19.9 L128.6,11.8 L150.0,10.0 L171.4,19.5 L192.9,38.9 L214.3,45.9 L235.7,40.6 L257.1,31.1 L278.6,68.0 L300.0,61.1 L300,74 L0,74 Z" fill="url(#g4ahileq)"/>
+<path d="M0.0,13.1 L21.4,13.2 L42.9,6.0 L64.3,24.0 L85.7,25.4 L107.1,19.9 L128.6,11.8 L150.0,10.0 L171.4,19.5 L192.9,38.9 L214.3,45.9 L235.7,40.6 L257.1,31.1 L278.6,68.0 L300.0,61.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="61.1" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">24579.42</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">日经225</span><span class="mc-chg up">▲ 2.48%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gkj0h4x3" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L21.4,14.0 L42.9,11.9 L64.3,24.1 L85.7,24.9 L107.1,30.8 L128.6,24.6 L150.0,13.5 L171.4,13.8 L192.9,24.9 L214.3,25.4 L235.7,34.4 L257.1,30.8 L278.6,41.6 L300.0,68.0 L300,74 L0,74 Z" fill="url(#gkj0h4x3)"/>
+<path d="M0.0,6.0 L21.4,14.0 L42.9,11.9 L64.3,24.1 L85.7,24.9 L107.1,30.8 L128.6,24.6 L150.0,13.5 L171.4,13.8 L192.9,24.9 L214.3,25.4 L235.7,34.4 L257.1,30.8 L278.6,41.6 L300.0,68.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="68.0" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">58860.59</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">韩国KOSPI</span><span class="mc-chg up">▲ 0.57%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gx44j8qa" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,29.3 L21.4,36.7 L42.9,24.0 L64.3,37.6 L85.7,35.1 L107.1,39.5 L128.6,28.6 L150.0,6.0 L171.4,12.2 L192.9,24.9 L214.3,16.8 L235.7,28.3 L257.1,26.8 L278.6,45.1 L300.0,68.0 L300,74 L0,74 Z" fill="url(#gx44j8qa)"/>
+<path d="M0.0,29.3 L21.4,36.7 L42.9,24.0 L64.3,37.6 L85.7,35.1 L107.1,39.5 L128.6,28.6 L150.0,6.0 L171.4,12.2 L192.9,24.9 L214.3,16.8 L235.7,28.3 L257.1,26.8 L278.6,45.1 L300.0,68.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="68.0" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">5088.69</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">德国DAX</span><span class="mc-chg down">▼ 1.92%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gm9mgc22" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,46.2 L21.4,62.8 L42.9,61.1 L64.3,57.7 L85.7,59.4 L107.1,68.0 L128.6,66.9 L150.0,61.1 L171.4,50.8 L192.9,38.1 L214.3,45.6 L235.7,49.1 L257.1,37.0 L278.6,6.0 L300.0,27.8 L300,74 L0,74 Z" fill="url(#gm9mgc22)"/>
+<path d="M0.0,46.2 L21.4,62.8 L42.9,61.1 L64.3,57.7 L85.7,59.4 L107.1,68.0 L128.6,66.9 L150.0,61.1 L171.4,50.8 L192.9,38.1 L214.3,45.6 L235.7,49.1 L257.1,37.0 L278.6,6.0 L300.0,27.8" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="27.8" r="2.2" fill="#cf3b34"/>
+</svg></div><div class="mc-value num">25820.36</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">法国CAC40</span><span class="mc-chg down">▼ 0.81%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gxu4r2z3" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#cf3b34" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#cf3b34" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,23.6 L21.4,43.5 L42.9,47.3 L64.3,45.0 L85.7,53.5 L107.1,67.2 L128.6,68.0 L150.0,60.3 L171.4,55.8 L192.9,40.4 L214.3,32.0 L235.7,48.9 L257.1,34.3 L278.6,6.0 L300.0,23.6 L300,74 L0,74 Z" fill="url(#gxu4r2z3)"/>
+<path d="M0.0,23.6 L21.4,43.5 L42.9,47.3 L64.3,45.0 L85.7,53.5 L107.1,67.2 L128.6,68.0 L150.0,60.3 L171.4,55.8 L192.9,40.4 L214.3,32.0 L235.7,48.9 L257.1,34.3 L278.6,6.0 L300.0,23.6" fill="none" stroke="#cf3b34" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="23.6" r="2.2" fill="#cf3b34"/>
+</svg></div><div class="mc-value num">8139.00</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">英国富时100</span><span class="mc-chg down">▼ 1.01%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gxdfegpb" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,62.7 L21.4,47.7 L42.9,50.2 L64.3,44.8 L85.7,56.2 L107.1,53.0 L128.6,68.0 L150.0,64.4 L171.4,49.8 L192.9,45.2 L214.3,38.1 L235.7,64.1 L257.1,6.0 L278.6,43.1 L300.0,66.9 L300,74 L0,74 Z" fill="url(#gxdfegpb)"/>
+<path d="M0.0,62.7 L21.4,47.7 L42.9,50.2 L64.3,44.8 L85.7,56.2 L107.1,53.0 L128.6,68.0 L150.0,64.4 L171.4,49.8 L192.9,45.2 L214.3,38.1 L235.7,64.1 L257.1,6.0 L278.6,43.1 L300.0,66.9" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="66.9" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">10673.94</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">现货黄金（伦敦金）</span><span class="mc-chg up">▲ 0.91%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gjjgbz5d" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,9.8 L21.4,6.0 L42.9,33.4 L64.3,39.6 L85.7,35.1 L107.1,25.0 L128.6,23.3 L150.0,34.1 L171.4,68.0 L192.9,51.6 L214.3,55.5 L235.7,25.0 L257.1,18.3 L278.6,22.5 L300.0,14.7 L300,74 L0,74 Z" fill="url(#gjjgbz5d)"/>
+<path d="M0.0,9.8 L21.4,6.0 L42.9,33.4 L64.3,39.6 L85.7,35.1 L107.1,25.0 L128.6,23.3 L150.0,34.1 L171.4,68.0 L192.9,51.6 L214.3,55.5 L235.7,25.0 L257.1,18.3 L278.6,22.5 L300.0,14.7" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="14.7" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">4107.95 美元/盎司</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">上海金Au99.99</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gsqk4ku2" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L21.4,15.7 L42.9,20.3 L64.3,25.6 L85.7,41.9 L107.1,43.3 L128.6,45.1 L150.0,39.1 L171.4,39.3 L192.9,50.4 L214.3,68.0 L235.7,63.1 L257.1,38.8 L278.6,19.5 L300.0,36.4 L300,74 L0,74 Z" fill="url(#gsqk4ku2)"/>
+<path d="M0.0,6.0 L21.4,15.7 L42.9,20.3 L64.3,25.6 L85.7,41.9 L107.1,43.3 L128.6,45.1 L150.0,39.1 L171.4,39.3 L192.9,50.4 L214.3,68.0 L235.7,63.1 L257.1,38.8 L278.6,19.5 L300.0,36.4" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="36.4" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">825.30 元/克 —0.00%</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">WTI原油</span><span class="mc-chg down">▼ 0.72%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gdqg5doi" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,27.2 L21.4,29.1 L42.9,23.5 L64.3,6.0 L85.7,14.8 L107.1,19.0 L128.6,12.0 L150.0,8.3 L171.4,8.0 L192.9,34.9 L214.3,32.9 L235.7,68.0 L257.1,55.2 L278.6,58.7 L300.0,57.9 L300,74 L0,74 Z" fill="url(#gdqg5doi)"/>
+<path d="M0.0,27.2 L21.4,29.1 L42.9,23.5 L64.3,6.0 L85.7,14.8 L107.1,19.0 L128.6,12.0 L150.0,8.3 L171.4,8.0 L192.9,34.9 L214.3,32.9 L235.7,68.0 L257.1,55.2 L278.6,58.7 L300.0,57.9" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="57.9" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">90.17 美元/桶</div></div><div class="mkt-card"><div class="mc-top"><span class="mc-name">布伦特原油</span><span class="mc-chg down">▼ 1.24%</span></div><div class="mc-spark"><svg viewBox="0 0 300 74" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g5uxntzs" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,20.4 L21.4,17.5 L42.9,7.4 L64.3,10.3 L85.7,16.6 L107.1,18.3 L128.6,15.0 L150.0,12.2 L171.4,6.0 L192.9,36.4 L214.3,36.2 L235.7,68.0 L257.1,52.3 L278.6,56.9 L300.0,58.1 L300,74 L0,74 Z" fill="url(#g5uxntzs)"/>
+<path d="M0.0,20.4 L21.4,17.5 L42.9,7.4 L64.3,10.3 L85.7,16.6 L107.1,18.3 L128.6,15.0 L150.0,12.2 L171.4,6.0 L192.9,36.4 L214.3,36.2 L235.7,68.0 L257.1,52.3 L278.6,56.9 L300.0,58.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="300.0" cy="58.1" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="mc-value num">97.10 美元/桶</div></div></div><div class="note">首饰黄金：首饰金均价 1218.9 元/克（10家主流金店足金挂牌价平均）；足金回收价 870 元/克（金条回收 869、24K 859、18K 641 元/克）。来源：金投网，仅供参考。</div><div class="note">注：A股尚未开盘，上证、深证、创业板显示为上一交易日收盘价；行情来源腾讯行情、新浪财经。</div></div>
+</section>
+<section id="s5">
+  <div class="sec-head">
+    <span class="ghost">05</span>
+    <span class="sec-no">05</span>
+    <h2>科技资讯 · 六分类</h2>
+    
+  </div>
+  <div class="card"><ol class="news tech-list"><li><h3><span class="cat cat-green">新能源汽车</span>全新红旗H9全系搭载华为乾崑智驾、鸿蒙座舱（IT之家，11月8日 23:41）——靳玉志披露，智能车控、HUAWEI SOUND、鲸鳍通信同步上车。</h3></li><li><h3><span class="cat cat-blue">手机数码</span>OPPO Reno17 系列外观首秀，定档11月16日发布（IT之家，11月8日 23:08）——宋雨琦代言，系列机型外观首次公开。</h3></li><li><h3><span class="cat cat-purple">人工智能</span>古尔曼：苹果最早明年推出自主代理式 Siri（IT之家，11月8日 23:51）——新 Siri 可主动代用户跨应用完成任务。</h3></li><li><h3><span class="cat cat-orange">无人机</span>暂无</h3></li><li><h3><span class="cat cat-teal">机器人</span>亚马逊成立新团队专攻家用机器人（IT之家，11月8日 15:24）——内部瞄准"前所未有"的新产品方向。</h3></li><li><h3><span class="cat cat-red">芯片</span>上海微电子新一代前道光刻机模型亮相进博会（百度热搜、IT之家，11月9日）——SSC800、SSB800 展示前道光刻装备自主化阶段成果。</h3></li></ol></div>
+</section>
+<section id="s6">
+  <div class="sec-head">
+    <span class="ghost">06</span>
+    <span class="sec-no">06</span>
+    <h2>加密货币行情<span class="sec-meta">走势 近 15 个交易日</span></h2>
+    
+  </div>
+  <div class="card data-card"><div class="coin-grid"><div class="coin"><div class="coin-name">比特币 BTC</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g1puiuw3" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,10.8 L12.9,7.7 L25.7,6.0 L38.6,19.4 L51.4,21.9 L64.3,21.1 L77.1,18.0 L90.0,24.1 L102.9,21.6 L115.7,9.4 L128.6,27.0 L141.4,28.0 L154.3,27.9 L167.1,32.0 L180.0,30.3 L180,38 L0,38 Z" fill="url(#g1puiuw3)"/>
+<path d="M0.0,10.8 L12.9,7.7 L25.7,6.0 L38.6,19.4 L51.4,21.9 L64.3,21.1 L77.1,18.0 L90.0,24.1 L102.9,21.6 L115.7,9.4 L128.6,27.0 L141.4,28.0 L154.3,27.9 L167.1,32.0 L180.0,30.3" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="30.3" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$75,274.00</div><div class="chg-inline down">▼ 0.70%</div></div><div class="coin"><div class="coin-name">以太坊 ETH</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gz7b5myg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,14.8 L12.9,12.5 L25.7,11.7 L38.6,21.0 L51.4,21.7 L64.3,20.8 L77.1,19.1 L90.0,21.0 L102.9,19.1 L115.7,6.0 L128.6,22.3 L141.4,22.3 L154.3,22.1 L167.1,32.0 L180.0,30.7 L180,38 L0,38 Z" fill="url(#gz7b5myg)"/>
+<path d="M0.0,14.8 L12.9,12.5 L25.7,11.7 L38.6,21.0 L51.4,21.7 L64.3,20.8 L77.1,19.1 L90.0,21.0 L102.9,19.1 L115.7,6.0 L128.6,22.3 L141.4,22.3 L154.3,22.1 L167.1,32.0 L180.0,30.7" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="30.7" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$2,142.45</div><div class="chg-inline down">▼ 4.19%</div></div><div class="coin"><div class="coin-name">Solana SOL</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gakemsra" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,8.4 L12.9,7.8 L25.7,6.0 L38.6,17.1 L51.4,15.9 L64.3,17.3 L77.1,18.9 L90.0,23.1 L102.9,21.7 L115.7,17.2 L128.6,27.4 L141.4,26.1 L154.3,26.7 L167.1,32.0 L180.0,30.1 L180,38 L0,38 Z" fill="url(#gakemsra)"/>
+<path d="M0.0,8.4 L12.9,7.8 L25.7,6.0 L38.6,17.1 L51.4,15.9 L64.3,17.3 L77.1,18.9 L90.0,23.1 L102.9,21.7 L115.7,17.2 L128.6,27.4 L141.4,26.1 L154.3,26.7 L167.1,32.0 L180.0,30.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="30.1" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$87.72</div><div class="chg-inline down">▼ 1.97%</div></div><div class="coin"><div class="coin-name">BNB</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g0457spk" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,11.9 L12.9,11.2 L25.7,6.0 L38.6,27.4 L51.4,25.3 L64.3,25.5 L77.1,22.4 L90.0,27.1 L102.9,27.5 L115.7,19.9 L128.6,30.4 L141.4,29.1 L154.3,28.2 L167.1,32.0 L180.0,30.6 L180,38 L0,38 Z" fill="url(#g0457spk)"/>
+<path d="M0.0,11.9 L12.9,11.2 L25.7,6.0 L38.6,27.4 L51.4,25.3 L64.3,25.5 L77.1,22.4 L90.0,27.1 L102.9,27.5 L115.7,19.9 L128.6,30.4 L141.4,29.1 L154.3,28.2 L167.1,32.0 L180.0,30.6" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="30.6" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$689.17</div><div class="chg-inline down">▼ 1.01%</div></div><div class="coin"><div class="coin-name">瑞波 XRP</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gez4sail" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,8.6 L12.9,6.0 L25.7,6.6 L38.6,17.2 L51.4,14.9 L64.3,15.5 L77.1,15.6 L90.0,15.7 L102.9,12.5 L115.7,9.1 L128.6,20.8 L141.4,24.2 L154.3,25.9 L167.1,32.0 L180.0,31.0 L180,38 L0,38 Z" fill="url(#gez4sail)"/>
+<path d="M0.0,8.6 L12.9,6.0 L25.7,6.6 L38.6,17.2 L51.4,14.9 L64.3,15.5 L77.1,15.6 L90.0,15.7 L102.9,12.5 L115.7,9.1 L128.6,20.8 L141.4,24.2 L154.3,25.9 L167.1,32.0 L180.0,31.0" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="31.0" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$1.12</div><div class="chg-inline down">▼ 3.42%</div></div><div class="coin"><div class="coin-name">狗狗币 DOGE</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gi4btwry" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,10.8 L12.9,7.7 L25.7,6.0 L38.6,16.8 L51.4,15.2 L64.3,16.0 L77.1,16.2 L90.0,19.3 L102.9,17.0 L115.7,12.5 L128.6,26.7 L141.4,23.7 L154.3,25.5 L167.1,32.0 L180.0,30.1 L180,38 L0,38 Z" fill="url(#gi4btwry)"/>
+<path d="M0.0,10.8 L12.9,7.7 L25.7,6.0 L38.6,16.8 L51.4,15.2 L64.3,16.0 L77.1,16.2 L90.0,19.3 L102.9,17.0 L115.7,12.5 L128.6,26.7 L141.4,23.7 L154.3,25.5 L167.1,32.0 L180.0,30.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="30.1" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$0.0697</div><div class="chg-inline down">▼ 2.45%</div></div><div class="coin"><div class="coin-name">柴犬币 SHIB</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g2xya9su" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,9.5 L12.9,8.6 L25.7,6.0 L38.6,20.7 L51.4,12.9 L64.3,19.0 L77.1,17.3 L90.0,23.3 L102.9,20.7 L115.7,16.4 L128.6,25.9 L141.4,24.6 L154.3,26.4 L167.1,32.0 L180.0,30.3 L180,38 L0,38 Z" fill="url(#g2xya9su)"/>
+<path d="M0.0,9.5 L12.9,8.6 L25.7,6.0 L38.6,20.7 L51.4,12.9 L64.3,19.0 L77.1,17.3 L90.0,23.3 L102.9,20.7 L115.7,16.4 L128.6,25.9 L141.4,24.6 L154.3,26.4 L167.1,32.0 L180.0,30.3" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="30.3" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$0.00000441</div><div class="chg-inline down">▼ 1.78%</div></div><div class="coin"><div class="coin-name">特朗普币 TRUMP</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gmaztd9w" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,7.1 L12.9,7.0 L25.7,6.0 L38.6,13.6 L51.4,11.7 L64.3,12.7 L77.1,7.0 L90.0,11.6 L102.9,12.2 L115.7,26.1 L128.6,30.0 L141.4,29.0 L154.3,29.7 L167.1,32.0 L180.0,31.3 L180,38 L0,38 Z" fill="url(#gmaztd9w)"/>
+<path d="M0.0,7.1 L12.9,7.0 L25.7,6.0 L38.6,13.6 L51.4,11.7 L64.3,12.7 L77.1,7.0 L90.0,11.6 L102.9,12.2 L115.7,26.1 L128.6,30.0 L141.4,29.0 L154.3,29.7 L167.1,32.0 L180.0,31.3" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="31.3" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$1.15</div><div class="chg-inline down">▼ 2.54%</div></div><div class="coin"><div class="coin-name">艾达 ADA</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gwb5zx5i" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.0 L12.9,6.6 L25.7,6.5 L38.6,19.5 L51.4,15.5 L64.3,17.3 L77.1,17.3 L90.0,21.0 L102.9,19.9 L115.7,13.8 L128.6,27.4 L141.4,24.7 L154.3,26.6 L167.1,32.0 L180.0,30.1 L180,38 L0,38 Z" fill="url(#gwb5zx5i)"/>
+<path d="M0.0,6.0 L12.9,6.6 L25.7,6.5 L38.6,19.5 L51.4,15.5 L64.3,17.3 L77.1,17.3 L90.0,21.0 L102.9,19.9 L115.7,13.8 L128.6,27.4 L141.4,24.7 L154.3,26.6 L167.1,32.0 L180.0,30.1" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="30.1" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$0.1776</div><div class="chg-inline down">▼ 1.88%</div></div><div class="coin"><div class="coin-name">雪崩 AVAX</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g0ls9ccj" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,6.7 L12.9,7.1 L25.7,6.0 L38.6,23.6 L51.4,17.0 L64.3,16.4 L77.1,13.5 L90.0,20.9 L102.9,17.9 L115.7,12.5 L128.6,26.2 L141.4,22.1 L154.3,24.8 L167.1,32.0 L180.0,29.7 L180,38 L0,38 Z" fill="url(#g0ls9ccj)"/>
+<path d="M0.0,6.7 L12.9,7.1 L25.7,6.0 L38.6,23.6 L51.4,17.0 L64.3,16.4 L77.1,13.5 L90.0,20.9 L102.9,17.9 L115.7,12.5 L128.6,26.2 L141.4,22.1 L154.3,24.8 L167.1,32.0 L180.0,29.7" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="29.7" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$8.03</div><div class="chg-inline down">▼ 2.32%</div></div><div class="coin"><div class="coin-name">Chainlink LINK</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="g9di0glu" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,13.6 L12.9,10.4 L25.7,6.0 L38.6,28.1 L51.4,12.5 L64.3,8.8 L77.1,13.9 L90.0,18.8 L102.9,20.6 L115.7,12.9 L128.6,27.1 L141.4,23.7 L154.3,24.1 L167.1,32.0 L180.0,29.3 L180,38 L0,38 Z" fill="url(#g9di0glu)"/>
+<path d="M0.0,13.6 L12.9,10.4 L25.7,6.0 L38.6,28.1 L51.4,12.5 L64.3,8.8 L77.1,13.9 L90.0,18.8 L102.9,20.6 L115.7,12.9 L128.6,27.1 L141.4,23.7 L154.3,24.1 L167.1,32.0 L180.0,29.3" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="29.3" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$10.56</div><div class="chg-inline down">▼ 2.28%</div></div><div class="coin"><div class="coin-name">波场 TRX</div><div class="coin-spark"><svg viewBox="0 0 180 38" preserveAspectRatio="none" class="spark" aria-hidden="true">
+<defs><linearGradient id="gprd9y7f" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#1c8a5a" stop-opacity=".20"/>
+<stop offset="100%" stop-color="#1c8a5a" stop-opacity="0"/></linearGradient></defs>
+<path d="M0.0,18.3 L12.9,17.2 L25.7,18.1 L38.6,6.0 L51.4,19.5 L64.3,32.0 L77.1,27.0 L90.0,23.6 L102.9,22.4 L115.7,23.3 L128.6,24.2 L141.4,24.2 L154.3,23.3 L167.1,23.7 L180.0,23.6 L180,38 L0,38 Z" fill="url(#gprd9y7f)"/>
+<path d="M0.0,18.3 L12.9,17.2 L25.7,18.1 L38.6,6.0 L51.4,19.5 L64.3,32.0 L77.1,27.0 L90.0,23.6 L102.9,22.4 L115.7,23.3 L128.6,24.2 L141.4,24.2 L154.3,23.3 L167.1,23.7 L180.0,23.6" fill="none" stroke="#1c8a5a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+<circle cx="180.0" cy="23.6" r="2.2" fill="#1c8a5a"/>
+</svg></div><div class="coin-price num">$0.3195</div><div class="chg-inline down">▼ 0.34%</div></div></div></div>
+</section>
+<section id="s7">
+  <div class="sec-head">
+    <span class="ghost">07</span>
+    <span class="sec-no">07</span>
+    <h2>加密资讯</h2>
+    <span class="sec-count">3 条</span>
+  </div>
+  <div class="card"><ol class="news"><li><h3>Coinbase 详解安全策略：超99%客户资产存放于冷钱包<span class="src">新浪财经·区块链，11月9日</span></h3></li><li><h3>10月交易所现货成交合计6236亿美元，环比下降9.3%<span class="src">新浪财经·区块链，11月7日</span></h3></li><li><h3>数字欧元新进展：欧洲央行选定两大网络服务提供商<span class="src">新浪财经·区块链，11月7日</span></h3></li></ol></div><div class="note">---</div><div class="src-line">数据来源：腾讯行情、新浪财经、金投网、IT之家、百度热搜、Binance 公共行情 API。加密货币为24小时现货报价。</div>
+</section>
+  <footer>由阿贵自动生成 · 2026年11月9日 星期一<span class="sep">|</span><a href="./">返回今日</a><span class="sep">|</span>数据来源见各条目标注</footer>
+</div>
+<button class="top" id="tp" aria-label="回到顶部">↑</button>
+<script>
+(function(){
+  var pg=document.getElementById('pg'),tp=document.getElementById('tp');
+  function onScroll(){
+    var h=document.documentElement,s=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);
+    pg.style.width=(s*100)+'%';
+    tp.classList.toggle('on',h.scrollTop>620);
+  }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  tp.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'});});
+  var links=[].slice.call(document.querySelectorAll('.toc a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});
+        }
+      });
+    },{rootMargin:'-42% 0px -52% 0px'});
+    links.forEach(function(a){var t=document.querySelector(a.getAttribute('href')); if(t) io.observe(t);});
+  }
+
+  // 刷新
+  function doRefresh(){location.replace(location.pathname+'?r='+Date.now());}
+  var rf=document.getElementById('rf');
+  if(rf) rf.addEventListener('click',doRefresh);
+
+  // 下拉刷新(触屏)
+  var ptr=document.createElement('div');
+  ptr.className='ptr';
+  ptr.innerHTML='<div class="ptr-in"><span class="ptr-spin"></span><span id="ptr-txt">下拉刷新</span></div>';
+  document.body.appendChild(ptr);
+  var ptrTxt=document.getElementById('ptr-txt'), ptrIn=ptr.querySelector('.ptr-in');
+  var startY=0, pulling=false, dist=0, TH=62;
+
+  function ptrReset(){
+    ptr.style.height='0px'; ptr.style.opacity='0';
+    ptrIn.style.transform='translateY(-120%)'; ptr.classList.remove('loading');
+  }
+  ptrReset();
+
+  addEventListener('touchstart',function(e){
+    if(window.scrollY<=0 && e.touches.length===1){ startY=e.touches[0].clientY; pulling=true; dist=0; }
+  },{passive:true});
+
+  addEventListener('touchmove',function(e){
+    if(!pulling) return;
+    var dy=e.touches[0].clientY-startY;
+    if(dy>0 && window.scrollY<=0){
+      dist=Math.min(92, dy*0.5);
+      ptr.style.height=dist+'px';
+      ptr.style.opacity=Math.min(1,dist/46);
+      ptrIn.style.transform='translateY(0)';
+      ptrTxt.textContent = dist>=TH ? '松开刷新' : '下拉刷新';
+    } else if(dy<=0){ pulling=false; ptrReset(); dist=0; }
+  },{passive:true});
+
+  addEventListener('touchend',function(){
+    if(!pulling) return;
+    pulling=false;
+    if(dist>=TH){
+      ptr.classList.add('loading');
+      ptrTxt.textContent='正在刷新…';
+      ptr.style.height='52px';
+      setTimeout(doRefresh,180);
+    } else { ptrReset(); }
+    dist=0;
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
